@@ -1,0 +1,1040 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0AFAD4AB-163E-4D63-A584-6F1F78D135A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Film_Info__Organizer.ModMain</StartupObject>
+    <RootNamespace>Film_Info__Organizer</RootNamespace>
+    <AssemblyName>Film Info! Organizer</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>oVideo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5D2B070A08C1540F5E13D3848BAEF966AD56CED2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Film Info! Organizer_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\Downloads\Json45r9\Bin\Net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Allgemein\Fehler.vb" />
+    <Compile Include="Allgemein\Messages.vb" />
+    <Compile Include="Allgemein\MyException_Type.vb" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Components\MyTreeGridView.vb" />
+    <Compile Include="Components\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialoge\Player.Designer.vb">
+      <DependentUpon>Player.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Player.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Download\TrailerScrapper.vb" />
+    <Compile Include="InfoPanels\InfoPanel_Movie.Designer.vb">
+      <DependentUpon>InfoPanel_Movie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPanels\InfoPanel_Movie.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InfoPanels\InfoPanel_Episode.Designer.vb">
+      <DependentUpon>InfoPanel_Episode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPanels\InfoPanel_Episode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InfoPanels\InfoPanel_Multiselected.Designer.vb">
+      <DependentUpon>InfoPanel_Multiselected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPanels\InfoPanel_Multiselected.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data\Series_Collection.vb" />
+    <Compile Include="Scrapper\FFProbe\FFProbe.vb" />
+    <Compile Include="UserControl2.xaml.vb">
+      <DependentUpon>UserControl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Export_Values.Designer.vb">
+      <DependentUpon>Export_Values.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Export_Values.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export_Value_Control.Designer.vb">
+      <DependentUpon>Export_Value_Control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Export_Value_Control.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funktionen\Unzip.vb" />
+    <Compile Include="Components\Kopie von VistaCheckbox.Designer.vb">
+      <DependentUpon>Kopie von VistaCheckbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Kopie von VistaCheckbox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Explorer Funktionen\ExplorerContextMenu.vb" />
+    <Compile Include="Icons\InfoTabIcons.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InfoTabIcons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Icons\OnlineQuellen.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnlineQuellen.resx</DependentUpon>
+    </Compile>
+    <Compile Include="lngicons.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lngicons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ModMain.vb" />
+    <Compile Include="Explorer Funktionen\ExplorerActions.vb" />
+    <Compile Include="Explorer Funktionen\ExplorerContext.vb" />
+    <Compile Include="fromMediaScout.vb" />
+    <Compile Include="Components\PreviewSheet.designer.vb">
+      <DependentUpon>PreviewSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\PreviewSheet.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ToolStripComponents.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\Series.vb" />
+    <Compile Include="Dialoge\Dialog_ChangeMediaInfo.Designer.vb">
+      <DependentUpon>Dialog_ChangeMediaInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_ChangeMediaInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialoge\Kopie von Dialog_Sortieren_Wizard.Designer.vb">
+      <DependentUpon>Kopie von Dialog_Sortieren_Wizard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Kopie von Dialog_Sortieren_Wizard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Download\Dialog_Download.Designer.vb">
+      <DependentUpon>Dialog_Download.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Download\Dialog_Download.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Download\DownloadManager.vb" />
+    <Compile Include="Data\AdminRights.vb" />
+    <Compile Include="Dialoge\Dialog_MovetoNewFolder.Designer.vb">
+      <DependentUpon>Dialog_MovetoNewFolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_MovetoNewFolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\DataExport.vb" />
+    <Compile Include="Download\Dialog_Sheet.designer.vb">
+      <DependentUpon>Dialog_Sheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Download\Dialog_Sheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Einstellungen\Filter.vb" />
+    <Compile Include="Dialoge\Dialog_Sortieren_Wizard.Designer.vb">
+      <DependentUpon>Dialog_Sortieren_Wizard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_Sortieren_Wizard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Einstellungen\Standardicon.vb" />
+    <Compile Include="Components\Renderer\NativRenderer.vb" />
+    <Compile Include="Download\Actorimages.vb" />
+    <Compile Include="Progress\Dialog1.Designer.vb">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Progress\Dialog1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress\RowFilter.vb" />
+    <Compile Include="Dialoge\Dialog_Trailer.Designer.vb">
+      <DependentUpon>Dialog_Trailer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_Trailer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scrapper\Scrapper.vb" />
+    <Compile Include="Scrapper\tmdb.vb" />
+    <Compile Include="Scrapper\Moviepilot.vb" />
+    <Compile Include="Einstellungen\Dialog_Filterbearbeiten.Designer.vb">
+      <DependentUpon>Dialog_Filterbearbeiten.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Einstellungen\Dialog_Filterbearbeiten.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Download\ImageDestinations.vb" />
+    <Compile Include="Logger.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_GenreAuswahl.Designer.vb">
+      <DependentUpon>Dialog_GenreAuswahl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_GenreAuswahl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress\Progress.vb" />
+    <Compile Include="Progress\Laden_Dialog.Designer.vb">
+      <DependentUpon>Laden_Dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Progress\Laden_Dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Download\MovieSheets.vb" />
+    <Compile Include="Components\mygraphics.vb" />
+    <Compile Include="Components\OSType.vb" />
+    <Compile Include="Data\Renamer.vb" />
+    <Compile Include="Dialoge\SortWrapper.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\UserControl2.Designer.vb">
+      <DependentUpon>UserControl2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\UserControl2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_Online_Save.Designer.vb">
+      <DependentUpon>Dialog_Online_Save.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_Online_Save.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_About.designer.vb">
+      <DependentUpon>Dialog_About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scrapper\MediaInfo\MediaInfo.vb" />
+    <Compile Include="Dialoge\Dialog_Hints.Designer.vb">
+      <DependentUpon>Dialog_Hints.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_Hints.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_LoadingMethode.Designer.vb">
+      <DependentUpon>Dialog_LoadingMethode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_LoadingMethode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Download\Dialog_Fanart.designer.vb">
+      <DependentUpon>Dialog_Fanart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Download\Dialog_Fanart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Allgemein\Enumurations.vb" />
+    <Compile Include="Scrapper\MediaInfo\MediaInfoDLL.vb" />
+    <Compile Include="Download\TMDBImages.vb" />
+    <Compile Include="Dialoge\Dialog_Online_Suche.Designer.vb">
+      <DependentUpon>Dialog_Online_Suche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialoge\Dialog_Online_Suche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funktionen\weitereFunktionen.vb" />
+    <Compile Include="Components\DataGridViewProgressColumn.vb" />
+    <Compile Include="Components\Components1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\Movie.vb" />
+    <Compile Include="Einstellungen\Dialog_Fortschrittsettings.Designer.vb">
+      <DependentUpon>Dialog_Fortschrittsettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Einstellungen\Dialog_Fortschrittsettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funktionen\Funktionen.vb" />
+    <Compile Include="Einstellungen\Einstellungen.vb" />
+    <Compile Include="Funktionen\mod_Extension_Form.vb" />
+    <Compile Include="Data\Daten.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Components\Renderer\Renderer.vb" />
+    <Compile Include="Components\PreviewCover.designer.vb">
+      <DependentUpon>PreviewCover.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\PreviewCover.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Einstellungen\Settings.designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Einstellungen\Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\XMLModule.vb" />
+    <Compile Include="Components\VistaCheckbox.Designer.vb">
+      <DependentUpon>VistaCheckbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\VistaCheckbox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SingleInstanceHandler.vb" />
+    <Compile Include="Funktionen\StandardBrowserIcon.vb" />
+    <Compile Include="Toolbar16.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Toolbar16.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Update\Dialog_Update.Designer.vb">
+      <DependentUpon>Dialog_Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Update\Dialog_Update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update\Update.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Components\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Kopie von VistaCheckbox.resx">
+      <DependentUpon>Kopie von VistaCheckbox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialoge\Player.resx">
+      <DependentUpon>Player.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\PreviewSheet.resx">
+      <DependentUpon>PreviewSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialoge\Dialog_ChangeMediaInfo.resx">
+      <DependentUpon>Dialog_ChangeMediaInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialoge\Kopie von Dialog_Sortieren_Wizard.resx">
+      <DependentUpon>Kopie von Dialog_Sortieren_Wizard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Download\Dialog_Download.resx">
+      <DependentUpon>Dialog_Download.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialoge\Dialog_MovetoNewFolder.resx">
+      <DependentUpon>Dialog_MovetoNewFolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\UserControl1.resx">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\UserControl2.resx">
+      <DependentUpon>UserControl2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialoge\Dialog_Online_Save.resx">
+      <DependentUpon>Dialog_Online_Save.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialoge\Dialog_About.resx">
+      <DependentUpon>Dialog_About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialoge\Dialog_Hints.resx">
+      <DependentUpon>Dialog_Hints.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialoge\Dialog_LoadingMethode.resx">
+      <DependentUpon>Dialog_LoadingMethode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Download\Dialog_Fanart.resx">
+      <DependentUpon>Dialog_Fanart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialoge\Dialog_Online_Suche.resx">
+      <DependentUpon>Dialog_Online_Suche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Download\Dialog_Sheet.resx">
+      <DependentUpon>Dialog_Sheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Einstellungen\Dialog_Filterbearbeiten.resx">
+      <DependentUpon>Dialog_Filterbearbeiten.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Einstellungen\Dialog_Fortschrittsettings.resx">
+      <DependentUpon>Dialog_Fortschrittsettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialoge\Dialog_Sortieren_Wizard.resx">
+      <DependentUpon>Dialog_Sortieren_Wizard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export_Values.resx">
+      <DependentUpon>Export_Values.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export_Value_Control.resx">
+      <DependentUpon>Export_Value_Control.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\InfoTabIcons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InfoTabIcons.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\OnlineQuellen.resx">
+      <CustomToolNamespace>My.Icons</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>OnlineQuellen.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoPanels\InfoPanel_Movie.resx">
+      <DependentUpon>InfoPanel_Movie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoPanels\InfoPanel_Episode.resx">
+      <DependentUpon>InfoPanel_Episode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoPanels\InfoPanel_Multiselected.resx">
+      <DependentUpon>InfoPanel_Multiselected.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lngicons.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>lngicons.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\PreviewCover.resx">
+      <DependentUpon>PreviewCover.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Einstellungen\Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\VistaCheckbox.resx">
+      <DependentUpon>VistaCheckbox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialoge\Dialog_GenreAuswahl.resx">
+      <DependentUpon>Dialog_GenreAuswahl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress\Dialog1.resx">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress\Laden_Dialog.resx">
+      <DependentUpon>Laden_Dialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialoge\Dialog_Trailer.resx">
+      <DependentUpon>Dialog_Trailer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbar16.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Toolbar16.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update\Dialog_Update.resx">
+      <DependentUpon>Dialog_Update.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abbrechen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export.zip" />
+    <None Include="Resources\mediainfoicon161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_cover_bg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xbmc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfav16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subfav16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\but_fulls_hover.png" />
+    <Resource Include="Images\but_fulls_normal.png" />
+    <Resource Include="Images\but_nofulls_hover.png" />
+    <Resource Include="Images\but_nofulls_normal.png" />
+    <Resource Include="Images\but_play_hover.png" />
+    <Resource Include="Images\but_play_normal.png" />
+    <Resource Include="Images\but_ppause_hover.png" />
+    <Resource Include="Images\but_ppause_normal.png" />
+    <Resource Include="Images\but_soundoff_hover.png" />
+    <Resource Include="Images\but_soundoff_normal.png" />
+    <Resource Include="Images\but_soundon_hover.png" />
+    <Resource Include="Images\but_soundon_normal.png" />
+    <Resource Include="Images\bufferloader.gif" />
+    <Resource Include="Images\buffer_hover.png" />
+    <Resource Include="Images\buffer_normal.png" />
+    <Content Include="oVideo.ico" />
+    <None Include="oVideo.png" />
+    <None Include="Resources\box_download%281%29.png" />
+    <None Include="Resources\but_fulls_hover.png" />
+    <None Include="Resources\but_fulls_normal.png" />
+    <None Include="Resources\but_nofulls_hover.png" />
+    <None Include="Resources\but_nofulls_normal.png" />
+    <Content Include="Resources\Datatreeicons\error.png" />
+    <Content Include="Resources\Datatreeicons\folge.png" />
+    <Content Include="Resources\Datatreeicons\Serie.png" />
+    <Content Include="Resources\Datatreeicons\staffel.png" />
+    <None Include="Resources\Ok_gray.png" />
+    <None Include="Resources\Downloadboxbig.png" />
+    <None Include="Resources\kontextmenu.png" />
+    <None Include="Resources\flag_wichtig.png" />
+    <None Include="Resources\pw_yt.png" />
+    <None Include="Resources\lng\de.png" />
+    <None Include="Resources\lng\gb.png" />
+    <None Include="Resources\lng\us.png" />
+    <None Include="Resources\lng\dum.png" />
+    <None Include="Resources\lng\qu_hd.png" />
+    <None Include="Resources\lng\qu_hq.png" />
+    <None Include="Resources\lng\qu_sd.png" />
+    <None Include="Resources\threepixline_l.png" />
+    <None Include="Resources\trailer_fast.png" />
+    <None Include="Resources\FSK_Logo.png" />
+    <Content Include="Video_128.ico" />
+    <None Include="Video_256.png" />
+    <None Include="Resources\AmazonToolStripMenuItem.Image.png" />
+    <None Include="Resources\Infotabicons\5grey.png" />
+    <None Include="Resources\Infotabicons\5.png" />
+    <None Include="Resources\Infotabicons\4grey.png" />
+    <None Include="Resources\OnlineQuelle\xRel.png" />
+    <None Include="Resources\OnlineQuelle\xbmc.png" />
+    <None Include="Resources\OnlineQuelle\wiki.png" />
+    <None Include="Resources\OnlineQuelle\tmdb.png" />
+    <None Include="Resources\OnlineQuelle\ofdb.png" />
+    <None Include="Resources\OnlineQuelle\movieposterdb.png" />
+    <None Include="Resources\OnlineQuelle\moviepilot.png" />
+    <None Include="Resources\OnlineQuelle\imdb.png" />
+    <None Include="Resources\OnlineQuelle\file.png" />
+    <None Include="Resources\OnlineQuelle\amazon.png" />
+    <None Include="Resources\Infotabicons\3grey.png" />
+    <None Include="Resources\Infotabicons\3.png" />
+    <None Include="Resources\Infotabicons\3 - Kopie.png" />
+    <None Include="Resources\Infotabicons\2grey.png" />
+    <None Include="Resources\Infotabicons\2.png" />
+    <None Include="Resources\Infotabicons\1grey.png" />
+    <None Include="Resources\Infotabicons\1.png" />
+    <None Include="Resources\Infotabicons\4.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\Interop.Shell32.dll" />
+    <None Include="Resources\darsteller.png" />
+    <None Include="Resources\folder_close.png" />
+    <None Include="Resources\ordner_copy.png" />
+    <None Include="Resources\ordner_ausscheiden.png" />
+    <None Include="Resources\Ordner_loeschen.png" />
+    <None Include="Resources\Ordner_kopieren.png" />
+    <None Include="Resources\Ordner_verschieben.png" />
+    <None Include="Resources\toolstrip_radio_checked.png" />
+    <None Include="Resources\shadow_gray_left.png" />
+    <None Include="Resources\shadow_gray_right.png" />
+    <None Include="Resources\Misc-Mail-icon.png" />
+    <None Include="Resources\Light-Beer-icon.png" />
+    <None Include="Resources\pw_wiki.png" />
+    <None Include="Resources\Favoriten.png" />
+    <None Include="Resources\plugins_gray.png" />
+    <None Include="Resources\plugins.png" />
+    <None Include="Resources\exit_dark.png" />
+    <None Include="Resources\suchen_close_hover.png" />
+    <None Include="Resources\suchen_normal.png" />
+    <None Include="Resources\suchen_close.png" />
+    <None Include="Resources\folder_clos.png" />
+    <None Include="Resources\Sign016.ico" />
+    <None Include="Resources\downloading_icontest2.gif" />
+    <None Include="Resources\App029.ico" />
+    <None Include="Resources\Normal_hinzufügen1.png" />
+    <None Include="Resources\normal_aktualisieren_new.png" />
+    <None Include="Resources\imageres 143.png" />
+    <None Include="Resources\imageres 192.png" />
+    <None Include="Resources\indicator_white.png" />
+    <None Include="Resources\indicator_black.png" />
+    <None Include="Resources\Wizard-64.png" />
+    <None Include="Resources\Wizard1-256.png" />
+    <None Include="Resources\test_eye_watched2.png" />
+    <None Include="Resources\test_eye_watched1.png" />
+    <None Include="Resources\test_eye_unwatched.png" />
+    <None Include="Resources\test_eye_watched.png" />
+    <None Include="XML-Files\CostumFilter.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\exit_normal.png" />
+    <None Include="Resources\shadow_gray_up.png" />
+    <None Include="Resources\shadow_gray.png" />
+    <None Include="Resources\pw_file.png" />
+    <None Include="Resources\toolstrip_checked.png" />
+    <None Include="Resources\Wood Wallpaper_1024.jpg" />
+    <None Include="Resources\setGenre.xml" />
+    <None Include="XML-Files\Genre.xml" />
+    <Content Include="Icon.ico" />
+    <None Include="Resources\flag_s_new.png" />
+    <None Include="Resources\flag_new.png" />
+    <None Include="Resources\flag_new_qm_s.png" />
+    <None Include="Resources\flag_new_qm.png" />
+    <None Include="Resources\rate_new3s.png" />
+    <None Include="Resources\rate_new2s.png" />
+    <None Include="Resources\rate_new1s.png" />
+    <None Include="Resources\rate_new3.png" />
+    <None Include="Resources\rate_new2.png" />
+    <None Include="Resources\rate_new1.png" />
+    <None Include="Resources\flags_s_qm.png" />
+    <None Include="Resources\flags_qm.png" />
+    <None Include="Resources\flag_blank.png" />
+    <None Include="Resources\flag_s_blank.png" />
+    <None Include="Resources\questionmark.png" />
+    <None Include="Resources\48question.png" />
+    <None Include="Resources\48ok.png" />
+    <None Include="Resources\48no.png" />
+    <None Include="Resources\ajax-loader %282%29.gif" />
+    <None Include="Resources\102.gif" />
+    <None Include="Resources\Sign006.png" />
+    <None Include="Resources\Net003.png" />
+    <None Include="Resources\Folder150.png" />
+    <None Include="Resources\search_exact1.png" />
+    <None Include="Resources\header-logo.png" />
+    <None Include="Resources\Folder132.png" />
+    <None Include="Resources\Folder124.png" />
+    <None Include="Resources\Folder129.png" />
+    <None Include="Resources\pw_tmdb.png" />
+    <None Include="Resources\Sign0071.png" />
+    <None Include="Resources\Sign007.png" />
+    <None Include="Resources\Sign010.png" />
+    <None Include="Resources\CP049.png" />
+    <None Include="Resources\App051.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\sidebarout_161.png" />
+    <None Include="Resources\Tree_out.png" />
+    <None Include="Resources\Papergrp_no.png" />
+    <None Include="Resources\Tree_in.png" />
+    <None Include="Resources\checker.png" />
+    <None Include="Resources\abouttestfio1.png" />
+    <None Include="Resources\abouttestfio.png" />
+    <None Include="Resources\abouttestfio3.png" />
+    <None Include="Resources\select_o.png" />
+    <None Include="Resources\abouttestfio2.png" />
+    <None Include="Resources\select.png" />
+    <None Include="Resources\grad.png" />
+    <None Include="Resources\toolbar32.png" />
+    <None Include="Resources\Unbenannt2.png" />
+    <None Include="Resources\Unbenanntsasfgdsfrg.png" />
+    <None Include="Resources\gray_48.png" />
+    <None Include="Resources\staty_trailer.png" />
+    <None Include="Resources\staty_cover_test.png" />
+    <None Include="Resources\staty_mediainfo.png" />
+    <None Include="Resources\status5.png" />
+    <None Include="Resources\staty_test.png" />
+    <None Include="Resources\status3.png" />
+    <None Include="Resources\status1.png" />
+    <None Include="Resources\staty_cover.png" />
+    <None Include="Resources\CP016_24_24.png" />
+    <None Include="Resources\staty_32_info.png" />
+    <None Include="Resources\staty_not.png" />
+    <None Include="Resources\browser.png" />
+    <None Include="Resources\Suche_datenbank.png" />
+    <None Include="Resources\Net021.png" />
+    <None Include="Resources\search_schnell1.png" />
+    <None Include="Resources\Save_mymovies.png" />
+    <None Include="Resources\Web.png" />
+    <None Include="Resources\Video.png" />
+    <None Include="Resources\Design_change.png" />
+    <None Include="Resources\Suche.png" />
+    <None Include="Resources\CP016.png" />
+    <None Include="Resources\staty_check.png" />
+    <None Include="Resources\Normal_neuladen.png" />
+    <None Include="Resources\mediainfoicon16.png" />
+    <None Include="Resources\pw_moviepilot.png" />
+    <None Include="Resources\film-reel.png" />
+    <None Include="Resources\Media015.png" />
+    <None Include="Resources\Links.png" />
+    <None Include="Resources\16_Links.png" />
+    <None Include="Resources\Info.png" />
+    <None Include="Resources\Alert002.png" />
+    <None Include="Resources\Light_hinzufuegen.png" />
+    <None Include="Resources\xbmc.png" />
+    <None Include="Resources\Normal_durchsuchen.png" />
+    <None Include="Resources\Löschen.png" />
+    <None Include="Resources\csvformat.png" />
+    <None Include="Resources\Normal_hinzufuegen.png" />
+    <None Include="Resources\Light_durchsuchen.png" />
+    <None Include="Resources\Speichern.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\staty_16_cover.png" />
+    <None Include="Resources\Export_excel.png" />
+    <None Include="Resources\Normal_laden.png" />
+    <None Include="Resources\Update.png" />
+    <None Include="Resources\Net036.png" />
+    <None Include="Resources\Light_laden.png" />
+    <None Include="Resources\Blaettern.png" />
+    <None Include="Resources\Fio_filetype.png" />
+    <None Include="Resources\tree_default.png" />
+    <None Include="Resources\Export.png" />
+    <None Include="Resources\Play.png" />
+    <None Include="Resources\Media001.png" />
+    <None Include="Resources\Light_neuladen.png" />
+    <None Include="Resources\refrechdb1.png" />
+    <None Include="Resources\Write001.png" />
+    <None Include="Resources\write.png" />
+    <None Include="Resources\staty_warn.png" />
+    <None Include="Resources\Settings.png" />
+    <None Include="Resources\View_extragroß.png" />
+    <None Include="Resources\Cover_dl2_16.png" />
+    <None Include="Resources\Hilfe.png" />
+    <None Include="Resources\progress.png" />
+    <None Include="Resources\Sign016.png" />
+    <None Include="Resources\Down.png" />
+    <None Include="Resources\plus1.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\go.png" />
+    <None Include="Resources\mybrowser_maximize.png" />
+    <None Include="Resources\Sign008.png" />
+    <None Include="Resources\Ok.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\Up.png" />
+    <None Include="Resources\Sign015.png" />
+    <None Include="Resources\forward.png" />
+    <None Include="Resources\sidebarout_32.png" />
+    <None Include="Resources\View_mittel.png" />
+    <None Include="Resources\Cover_dl_16.png" />
+    <None Include="Resources\View_groß.png" />
+    <None Include="Resources\search_exact.png" />
+    <None Include="Resources\refrechdb.png" />
+    <None Include="Resources\hv16out.png" />
+    <None Include="Resources\Papergrp.png" />
+    <None Include="Resources\sidebarout_24.png" />
+    <None Include="Resources\View_kacheln.png" />
+    <None Include="Resources\Unbenannt.png" />
+    <None Include="Resources\Panel_out1.png" />
+    <None Include="Resources\Panel_out.png" />
+    <None Include="Resources\Sub.png" />
+    <None Include="Resources\View_klein.png" />
+    <None Include="Resources\Cover_dl3_16.png" />
+    <None Include="Resources\sidebarout_16.png" />
+    <None Include="Resources\fan1.png" />
+    <None Include="Resources\fan.png" />
+    <None Include="Resources\View_inhalt.png" />
+    <None Include="Resources\sidebarin_16.png" />
+    <None Include="Resources\Panel_in1.png" />
+    <None Include="Resources\Panel_in.png" />
+    <None Include="Resources\hv16in.png" />
+    <None Include="Resources\View_liste.png" />
+    <None Include="Resources\moviemaze.png" />
+    <None Include="Resources\View_details.png" />
+    <None Include="Resources\search_schnell.png" />
+    <None Include="Resources\Unbenannt1.PNG" />
+    <None Include="Resources\no_cover_bg.png" />
+    <None Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\normal.png" />
+    <None Include="Resources\ninimize.png" />
+    <None Include="Resources\config.png" />
+    <None Include="Resources\xxt1.png" />
+    <None Include="Resources\menubacktest2.png" />
+    <None Include="Resources\menubacktest.png" />
+    <None Include="Resources\token.jpg" />
+    <None Include="Resources\st_unpinned.png" />
+    <None Include="Resources\st_pinned.png" />
+    <None Include="Resources\qualy_3.png" />
+    <None Include="Resources\qualy_1.png" />
+    <None Include="Resources\qualy_0.png" />
+    <None Include="Resources\pw_xRel.png" />
+    <None Include="Resources\favicon.png" />
+    <None Include="Resources\pw_ofdb.png" />
+    <None Include="Resources\google.png" />
+    <None Include="Resources\Fanart_search_fast.png" />
+    <None Include="Resources\arrow_down.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\check_result.png" />
+    <None Include="Resources\Speichern1.png" />
+    <None Include="Resources\Down1.png" />
+    <None Include="Resources\Infopanel_Table_Backgrounds_red.png" />
+    <None Include="Resources\Infopanel_Table_Backgrounds_orange.png" />
+    <None Include="Resources\Infopanel_Table_Backgrounds_green.png" />
+    <None Include="Resources\warning4.png" />
+    <None Include="Resources\warning3.png" />
+    <None Include="Resources\warning2.png" />
+    <None Include="Resources\warning1.png" />
+    <None Include="Resources\column_warn.png" />
+    <None Include="Resources\column_ok.png" />
+    <None Include="Resources\column_not.png" />
+    <None Include="Resources\staty_16_warn.png" />
+    <None Include="Resources\staty_16_not.png" />
+    <None Include="Resources\staty_16_check.png" />
+    <None Include="Resources\staty_16_trailer.png" />
+    <None Include="Resources\staty_16_mediainfo.png" />
+    <None Include="Resources\staty_16_info.png" />
+    <None Include="Resources\staty_16_fanart.png" />
+    <None Include="Resources\staty_16_cover_test.png" />
+    <None Include="Resources\Download_aktive.gif" />
+    <None Include="Resources\lightbutton2.png" />
+    <None Include="Resources\lightbutton1.png" />
+    <None Include="Resources\securenormal.png" />
+    <None Include="Resources\securegray.png" />
+    <None Include="Resources\folder48.png" />
+    <None Include="Resources\testdia1.png" />
+    <None Include="Resources\testdia.png" />
+    <None Include="Resources\App030.png" />
+    <None Include="Resources\infobar.png" />
+    <None Include="Resources\Settingsbigsym2.png" />
+    <None Include="Resources\Settingsbigsym.png" />
+    <None Include="Resources\linevertical.png" />
+    <None Include="Resources\line1.png" />
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\User\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UserControl2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

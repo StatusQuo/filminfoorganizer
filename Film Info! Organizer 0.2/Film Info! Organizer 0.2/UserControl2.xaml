@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="UserControl2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="380" d:DesignWidth="754" Background="Black" Name="VideoPlayer">
+    <Grid>
+        <MediaElement Name="MediaElement1" ScrubbingEnabled="True" />
+        <Grid Name="Grid1" Height="52" VerticalAlignment="Bottom" Background="#64000000">
+            <Image Height="32" HorizontalAlignment="Right" Margin="0,0,16,10" Name="Image1" Source="Images/but_fulls_normal.png" Stretch="Fill" VerticalAlignment="Bottom" Width="32" />
+            <Image HorizontalAlignment="Left" Margin="16,0,0,10" Name="Image2" Stretch="Fill" Width="32" Source="Images/but_play_normal.png" Height="32" VerticalAlignment="Bottom" />
+            <Image Height="32" HorizontalAlignment="Right" Margin="0,0,54,10" Name="Image3" Source="/Film%20Info!%20Organizer;component/Images/but_soundon_normal.png" Stretch="Fill" VerticalAlignment="Bottom" Width="32" />
+            <Image Height="32" HorizontalAlignment="Left" Margin="54,0,0,10" Name="Image4" Source="/Film%20Info!%20Organizer;component/Images/buffer_normal.png" Stretch="Fill" VerticalAlignment="Bottom" Width="32" />
+        </Grid>
+    </Grid>
+</UserControl>

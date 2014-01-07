@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filter>
+  <cFilter>[ _.-]+\(?\d{4}\)?.*</cFilter>
+  <cFilter>[ _.-]+blu[ _.-]?ray.*</cFilter>
+  <cFilter>[ _.-]+bd[ _.-]?rip.*</cFilter>
+  <cFilter>[ _.-]+dvd.*</cFilter>
+  <cFilter>[ _.-]+(HD)?720.*</cFilter>
+  <cFilter>[ _.-]+(HD)?1080.*</cFilter>
+  <cFilter>[ _.-]+ac3.*</cFilter>
+  <cFilter>[ _.-]+dts.*</cFilter>
+  <cFilter>[ _.-]+divx.*</cFilter>
+  <cFilter>[ _.-]+xvid.*</cFilter>
+  <cFilter>[ _.-]+dc[ _.-]?.*</cFilter>
+  <cFilter>[ _.-]+dir(ector'?s?)?\s?cut.*</cFilter>
+  <cFilter>[ _.-]+extended.*</cFilter>
+  <cFilter>[ _.-]+hd(tv)?.*</cFilter>
+  <cFilter>[ _.-]+unrated.*</cFilter>
+  <cFilter>[ _.-]+uncut.*</cFilter>
+  <cFilter>[ _.-]+([a-z]{3}|multi)[sd]ub.*</cFilter>
+  <cFilter>[ _.-]+\[offline\].*</cFilter>
+  <cFilter>[ _.-]+ntsc.*</cFilter>
+  <cFilter>[ _.-]+german.*</cFilter>
+  <cFilter>[ _.-]+PAL[ _.-]?.*</cFilter>
+</Filter>

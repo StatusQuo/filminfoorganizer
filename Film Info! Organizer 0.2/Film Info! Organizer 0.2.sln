@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Film Info! Organizer", "Film Info! Organizer 0.2\Film Info! Organizer.vbproj", "{0AFAD4AB-163E-4D63-A584-6F1F78D135A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AFAD4AB-163E-4D63-A584-6F1F78D135A3}.Debug|x64.ActiveCfg = Debug|x86
+		{0AFAD4AB-163E-4D63-A584-6F1F78D135A3}.Debug|x64.Build.0 = Debug|x86
+		{0AFAD4AB-163E-4D63-A584-6F1F78D135A3}.Debug|x86.ActiveCfg = Debug|x86
+		{0AFAD4AB-163E-4D63-A584-6F1F78D135A3}.Debug|x86.Build.0 = Debug|x86
+		{0AFAD4AB-163E-4D63-A584-6F1F78D135A3}.Release|x64.ActiveCfg = Release|x64
+		{0AFAD4AB-163E-4D63-A584-6F1F78D135A3}.Release|x64.Build.0 = Release|x64
+		{0AFAD4AB-163E-4D63-A584-6F1F78D135A3}.Release|x86.ActiveCfg = Release|x86
+		{0AFAD4AB-163E-4D63-A584-6F1F78D135A3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

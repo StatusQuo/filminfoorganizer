@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Genres>
+    <Genre>
+        <id>28</id>
+        <Name-DE>Action</Name-DE>
+        <Name-EN>Action</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>12</id>
+        <Name-DE>Abenteuer</Name-DE>
+        <Name-EN>Adventure</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>16</id>
+        <Name-DE>Animation</Name-DE>
+        <Name-EN>Animation</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>35</id>
+        <Name-DE>Komödie</Name-DE>
+        <Name-EN>Comedy</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>80</id>
+        <Name-DE>Crime</Name-DE>
+        <Name-EN>Crime</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>105</id>
+        <Name-DE>Katastrophenfilm</Name-DE>
+        <Name-EN>Disaster</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>99</id>
+        <Name-DE>Dokumentarfilm</Name-DE>
+        <Name-EN>Documentary</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>18</id>
+        <Name-DE>Drama</Name-DE>
+        <Name-EN>Drama</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>82</id>
+        <Name-DE>Eastern</Name-DE>
+        <Name-EN>Eastern</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>2916</id>
+        <Name-DE>Erotik</Name-DE>
+        <Name-EN>Erotic</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>10751</id>
+        <Name-DE>Familie</Name-DE>
+        <Name-EN>Family</Name-EN>
+        <Filter>Kinder-/Familienfilm</Filter>
+    </Genre>
+    <Genre>
+        <id>10750</id>
+        <Name-DE>Fan-Film</Name-DE>
+        <Name-EN>Fan Film</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>14</id>
+        <Name-DE>Fantasy</Name-DE>
+        <Name-EN>Fantasy</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>10753</id>
+        <Name-DE>Film Noir</Name-DE>
+        <Name-EN>Film Noir</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>36</id>
+        <Name-DE>Geschichte</Name-DE>
+        <Name-EN>History</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>10595</id>
+        <Name-DE>Holiday</Name-DE>
+        <Name-EN>Holiday</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>27</id>
+        <Name-DE>Horror</Name-DE>
+        <Name-EN>Horror</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>10756</id>
+        <Name-DE>Indie</Name-DE>
+        <Name-EN>Indie</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>10402</id>
+        <Name-DE>Musik</Name-DE>
+        <Name-EN>Music</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>22</id>
+        <Name-DE>Musical</Name-DE>
+        <Name-EN>Musical</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>9648</id>
+        <Name-DE>Mystery</Name-DE>
+        <Name-EN>Mystery</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>10754</id>
+        <Name-DE>Neo-noir</Name-DE>
+        <Name-EN>Neo-noir</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>1115</id>
+        <Name-DE>Road Movie</Name-DE>
+        <Name-EN>Road Movie</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>10749</id>
+        <Name-DE>Romanze</Name-DE>
+        <Name-EN>Romance</Name-EN>
+        <Filter>Liebe/Romantik</Filter>
+    </Genre>
+    <Genre>
+        <id>878</id>
+        <Name-DE>Science Fiction</Name-DE>
+        <Name-EN>Science Fiction</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>10755</id>
+        <Name-DE>Kurzfilm</Name-DE>
+        <Name-EN>Short</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>9805</id>
+        <Name-DE>Sport</Name-DE>
+        <Name-EN>Sport</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>10758</id>
+        <Name-DE>Sportereignis</Name-DE>
+        <Name-EN>Sporting Event</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>10757</id>
+        <Name-DE>Sport Film</Name-DE>
+        <Name-EN>Sports Film</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>10748</id>
+        <Name-DE>Suspense</Name-DE>
+        <Name-EN>Suspense</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>53</id>
+        <Name-DE>Thriller</Name-DE>
+        <Name-EN>Thriller</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>10752</id>
+        <Name-DE>Kriegsfilm</Name-DE>
+        <Name-EN>War</Name-EN>
+        <Filter />
+    </Genre>
+    <Genre>
+        <id>37</id>
+        <Name-DE>Western</Name-DE>
+        <Name-EN>Western</Name-EN>
+        <Filter />
+    </Genre>
+</Genres>
