@@ -391,6 +391,12 @@ ByVal cchBuffer As Int32 _
         End Try
     End Function
     Shared Function HttploadJsontoXML(ByVal q As String, ByVal cPath As String) As Xml.XmlDocument
+        Dim d As String = IO.Path.Combine(Einstellungen.ChachePath, "Cache\Info")
+        If Not (IO.Directory.Exists(d)) Then
+            IO.Directory.CreateDirectory(d)
+        End If
+
+
         Dim f As String = IO.Path.Combine(Einstellungen.ChachePath, "Cache\Info\" & cPath & ".xml")
         If Not cPath = "" Then
             If IO.File.Exists(f) Then

@@ -1012,6 +1012,10 @@ Public Class MetaScrapper
         If Searching_Background = False Then
             Dialog_OnlineSuche.Cursor = Cursors.AppStarting
             Searching_Background = True
+
+            'Ae, Oe, Ue umwandeln
+            s = s.Replace("ae", "ä").Replace("oe", "ö").Replace("ue", "ü").Replace("Ae", "Ä").Replace("Oe", "Ö").Replace("Ue", "Ü")
+
             Dim bgw As New Search_Background
             bgw.s = s
             bgw.imdb = imdb_id
