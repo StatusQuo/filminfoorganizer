@@ -2382,12 +2382,15 @@ Public Class TMDB_Scrapper
         xml = New XmlDocument
 
         Try
-            xml.Load(Einstellungen.UserAbrufen.tmdbapiroot & "Movie.imdbLookup/en/xml/5fe800e9f7891b9131c0059be62a36d0/" & imdb)
+            ' 'https://api.themoviedb.org/3/find/tt0903624?api_key=5fe800e9f7891b9131c0059be62a36d0&external_source=imdb_id
+            xml = MyFunctions.HttploadJsontoXML(Einstellungen.UserAbrufen.tmdbapi3root & "find/" & imdb & "?api_key=" & Einstellungen.UserAbrufen.tmdbapiKey & "&external_source=imdb_id", "")
+            ' xml.Load(Einstellungen.UserAbrufen.tmdbapiroot & "Movie.imdbLookup/en/xml/5fe800e9f7891b9131c0059be62a36d0/" & imdb)
         Catch ex As Exception
             Return ""
         End Try
         Dim r As String = ""
         r = If(xml.SelectNodes("//id").Count > 0, xml.SelectSingleNode("//id").InnerText, "")
+        Debug.WriteLine("TMDB_Convertiere ID " & imdb & "->" & r)
         Return r
 
 
