@@ -1224,4 +1224,13 @@ Public Class Settings
         Dim g As New Progress_InstallFFProbe
         g.Run()
     End Sub
+
+    Private Sub BewertungToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BewertungToolStripMenuItem.Click
+        Dim tb As TextBox = TryCast(ContextMenu_RenameFormat.Tag, TextBox)
+        If tb IsNot Nothing Then
+            tb.SelectedText = "%bewertung%"
+
+            tb.Focus()
+        End If
+    End Sub
 End Class

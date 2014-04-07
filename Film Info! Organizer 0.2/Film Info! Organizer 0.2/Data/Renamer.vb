@@ -38,6 +38,7 @@ Public Class Renamer
         s = s.Replace("%a_codec%", m.AudioCodec)
         s = s.Replace("%imdbid%", m.IMDB_ID)
         s = s.Replace("%regie%", If(m.Regisseur.Contains(","), m.Regisseur.Substring(0, m.Regisseur.IndexOf(",")), m.Regisseur))
+        s = s.Replace("%bewertung%", m.Bewertung)
         s = CheckInvalid_F(s)
 
 

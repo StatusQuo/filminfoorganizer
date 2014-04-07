@@ -161,6 +161,7 @@ Partial Class Settings
         Me.PictureBox21 = New System.Windows.Forms.PictureBox()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.GroupBox31 = New System.Windows.Forms.GroupBox()
+        Me.TreeView_filter = New Film_Info__Organizer.TreeViewVista()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label49 = New System.Windows.Forms.Label()
@@ -202,6 +203,11 @@ Partial Class Settings
         Me.GroupBox28 = New System.Windows.Forms.GroupBox()
         Me.Genre_tmdbdownload = New System.Windows.Forms.CheckBox()
         Me.Page_MediaInfo = New System.Windows.Forms.Panel()
+        Me.GroupBox51 = New System.Windows.Forms.GroupBox()
+        Me.Label77 = New System.Windows.Forms.Label()
+        Me.FFProbeinfopic = New System.Windows.Forms.PictureBox()
+        Me.FFProbeinstallbut = New System.Windows.Forms.Button()
+        Me.FFProbeInstalled = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.Abrufen_MediaInfo_StandardFramerate = New System.Windows.Forms.TextBox()
@@ -217,6 +223,7 @@ Partial Class Settings
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.Abrufen_MediaInfo_Dauer_AKT = New System.Windows.Forms.CheckBox()
         Me.GroupBox_MediaiNfo = New System.Windows.Forms.GroupBox()
+        Me.LinkLabel21 = New Film_Info__Organizer.wyDay.Controls.LinkLabel2()
         Me.Label47 = New System.Windows.Forms.Label()
         Me.PictureBox24 = New System.Windows.Forms.PictureBox()
         Me.MediaInfoPic = New System.Windows.Forms.PictureBox()
@@ -230,6 +237,7 @@ Partial Class Settings
         Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.Label45 = New System.Windows.Forms.Label()
         Me.GroupBox34 = New System.Windows.Forms.GroupBox()
+        Me.LinkLabel22 = New Film_Info__Organizer.wyDay.Controls.LinkLabel2()
         Me.Label46 = New System.Windows.Forms.Label()
         Me.PictureBox23 = New System.Windows.Forms.PictureBox()
         Me.Moviethumbnailerinfopic = New System.Windows.Forms.PictureBox()
@@ -389,20 +397,13 @@ Partial Class Settings
         Me.TitelJahrVideoAuflösungVideoCodecAudioCodecToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.JahrTitelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TreeViewVista1 = New Film_Info__Organizer.TreeViewVista()
         Me.my_lineh = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
-        Me.GroupBox51 = New System.Windows.Forms.GroupBox()
-        Me.FFProbeinfopic = New System.Windows.Forms.PictureBox()
-        Me.FFProbeinstallbut = New System.Windows.Forms.Button()
-        Me.FFProbeInstalled = New System.Windows.Forms.Label()
-        Me.Label77 = New System.Windows.Forms.Label()
-        Me.LinkLabel21 = New Film_Info__Organizer.wyDay.Controls.LinkLabel2()
-        Me.TreeView_filter = New Film_Info__Organizer.TreeViewVista()
-        Me.TreeViewVista1 = New Film_Info__Organizer.TreeViewVista()
-        Me.LinkLabel22 = New Film_Info__Organizer.wyDay.Controls.LinkLabel2()
         Me.LinkLabel23 = New Film_Info__Organizer.wyDay.Controls.LinkLabel2()
+        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
+        Me.BewertungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Page_WindowsFilmbibliothek.SuspendLayout()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox7.SuspendLayout()
@@ -463,6 +464,8 @@ Partial Class Settings
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox28.SuspendLayout()
         Me.Page_MediaInfo.SuspendLayout()
+        Me.GroupBox51.SuspendLayout()
+        CType(Me.FFProbeinfopic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox10.SuspendLayout()
@@ -529,8 +532,6 @@ Partial Class Settings
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox51.SuspendLayout()
-        CType(Me.FFProbeinfopic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Page_WindowsFilmbibliothek
@@ -1790,6 +1791,21 @@ Partial Class Settings
         Me.GroupBox31.TabStop = False
         Me.GroupBox31.Text = "Filter"
         '
+        'TreeView_filter
+        '
+        Me.TreeView_filter._Autosize = False
+        Me.TreeView_filter.AllowDrop = True
+        Me.TreeView_filter.FullRowSelect = True
+        Me.TreeView_filter.HideSelection = False
+        Me.TreeView_filter.HotTracking = True
+        Me.TreeView_filter.ItemHeight = 20
+        Me.TreeView_filter.Location = New System.Drawing.Point(6, 70)
+        Me.TreeView_filter.Name = "TreeView_filter"
+        Me.TreeView_filter.ShowLines = False
+        Me.TreeView_filter.ShowRootLines = False
+        Me.TreeView_filter.Size = New System.Drawing.Size(367, 275)
+        Me.TreeView_filter.TabIndex = 10
+        '
         'Button10
         '
         Me.Button10.Image = Global.Film_Info__Organizer.Toolbar16.Add
@@ -2235,6 +2251,56 @@ Partial Class Settings
         Me.Page_MediaInfo.Size = New System.Drawing.Size(400, 470)
         Me.Page_MediaInfo.TabIndex = 6
         '
+        'GroupBox51
+        '
+        Me.GroupBox51.Controls.Add(Me.Label77)
+        Me.GroupBox51.Controls.Add(Me.FFProbeinfopic)
+        Me.GroupBox51.Controls.Add(Me.FFProbeinstallbut)
+        Me.GroupBox51.Controls.Add(Me.FFProbeInstalled)
+        Me.GroupBox51.Location = New System.Drawing.Point(8, 148)
+        Me.GroupBox51.Name = "GroupBox51"
+        Me.GroupBox51.Size = New System.Drawing.Size(384, 67)
+        Me.GroupBox51.TabIndex = 21
+        Me.GroupBox51.TabStop = False
+        Me.GroupBox51.Text = "FFProbe"
+        '
+        'Label77
+        '
+        Me.Label77.ForeColor = System.Drawing.SystemColors.GrayText
+        Me.Label77.Location = New System.Drawing.Point(10, 40)
+        Me.Label77.Name = "Label77"
+        Me.Label77.Size = New System.Drawing.Size(368, 18)
+        Me.Label77.TabIndex = 22
+        Me.Label77.Text = "Wichtig für xbmc"
+        '
+        'FFProbeinfopic
+        '
+        Me.FFProbeinfopic.Image = Global.Film_Info__Organizer.Toolbar16.Abbrechen
+        Me.FFProbeinfopic.Location = New System.Drawing.Point(15, 21)
+        Me.FFProbeinfopic.Name = "FFProbeinfopic"
+        Me.FFProbeinfopic.Size = New System.Drawing.Size(16, 16)
+        Me.FFProbeinfopic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.FFProbeinfopic.TabIndex = 4
+        Me.FFProbeinfopic.TabStop = False
+        '
+        'FFProbeinstallbut
+        '
+        Me.FFProbeinstallbut.Location = New System.Drawing.Point(286, 16)
+        Me.FFProbeinstallbut.Name = "FFProbeinstallbut"
+        Me.FFProbeinstallbut.Size = New System.Drawing.Size(92, 23)
+        Me.FFProbeinstallbut.TabIndex = 3
+        Me.FFProbeinstallbut.Text = "Download"
+        Me.FFProbeinstallbut.UseVisualStyleBackColor = True
+        '
+        'FFProbeInstalled
+        '
+        Me.FFProbeInstalled.AutoSize = True
+        Me.FFProbeInstalled.Location = New System.Drawing.Point(37, 22)
+        Me.FFProbeInstalled.Name = "FFProbeInstalled"
+        Me.FFProbeInstalled.Size = New System.Drawing.Size(95, 15)
+        Me.FFProbeInstalled.TabIndex = 2
+        Me.FFProbeInstalled.Text = "Aktuelle Version:"
+        '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.Label44)
@@ -2398,6 +2464,18 @@ Partial Class Settings
         Me.GroupBox_MediaiNfo.TabStop = False
         Me.GroupBox_MediaiNfo.Text = "Media-Info"
         '
+        'LinkLabel21
+        '
+        Me.LinkLabel21.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.LinkLabel21.HoverColor = System.Drawing.Color.Empty
+        Me.LinkLabel21.Image = Nothing
+        Me.LinkLabel21.Location = New System.Drawing.Point(350, 83)
+        Me.LinkLabel21.Name = "LinkLabel21"
+        Me.LinkLabel21.RegularColor = System.Drawing.Color.Empty
+        Me.LinkLabel21.Size = New System.Drawing.Size(29, 16)
+        Me.LinkLabel21.TabIndex = 7
+        Me.LinkLabel21.Text = "Info"
+        '
         'Label47
         '
         Me.Label47.ForeColor = System.Drawing.SystemColors.GrayText
@@ -2537,6 +2615,18 @@ Partial Class Settings
         Me.GroupBox34.TabIndex = 0
         Me.GroupBox34.TabStop = False
         Me.GroupBox34.Text = "Info"
+        '
+        'LinkLabel22
+        '
+        Me.LinkLabel22.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.LinkLabel22.HoverColor = System.Drawing.Color.Empty
+        Me.LinkLabel22.Image = Nothing
+        Me.LinkLabel22.Location = New System.Drawing.Point(353, 100)
+        Me.LinkLabel22.Name = "LinkLabel22"
+        Me.LinkLabel22.RegularColor = System.Drawing.Color.Empty
+        Me.LinkLabel22.Size = New System.Drawing.Size(29, 16)
+        Me.LinkLabel22.TabIndex = 16
+        Me.LinkLabel22.Text = "Info"
         '
         'Label46
         '
@@ -3943,7 +4033,7 @@ Partial Class Settings
         '
         Me.ContextMenu_RenameFormat.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FelderToolStripMenuItem, Me.FunktionenToolStripMenuItem, Me.ToolStripSeparator1, Me.VoreinstellungenToolStripMenuItem})
         Me.ContextMenu_RenameFormat.Name = "ContextMenu_RenameFormat"
-        Me.ContextMenu_RenameFormat.Size = New System.Drawing.Size(164, 76)
+        Me.ContextMenu_RenameFormat.Size = New System.Drawing.Size(164, 98)
         '
         'FelderToolStripMenuItem
         '
@@ -4034,7 +4124,7 @@ Partial Class Settings
         '
         'WeitereInformationsfelderToolStripMenuItem
         '
-        Me.WeitereInformationsfelderToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GenreToolStripMenuItem, Me.ProduktionslandToolStripMenuItem, Me.Regisseur1NameToolStripMenuItem, Me.IMDbIDToolStripMenuItem})
+        Me.WeitereInformationsfelderToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GenreToolStripMenuItem, Me.ProduktionslandToolStripMenuItem, Me.Regisseur1NameToolStripMenuItem, Me.IMDbIDToolStripMenuItem, Me.BewertungToolStripMenuItem})
         Me.WeitereInformationsfelderToolStripMenuItem.Name = "WeitereInformationsfelderToolStripMenuItem"
         Me.WeitereInformationsfelderToolStripMenuItem.Size = New System.Drawing.Size(215, 22)
         Me.WeitereInformationsfelderToolStripMenuItem.Text = "Weitere Informationsfelder"
@@ -4074,7 +4164,7 @@ Partial Class Settings
         'IfNullxyzToolStripMenuItem
         '
         Me.IfNullxyzToolStripMenuItem.Name = "IfNullxyzToolStripMenuItem"
-        Me.IfNullxyzToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.IfNullxyzToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.IfNullxyzToolStripMenuItem.Text = "$ifNull(x,y,z)"
         '
         'ToolStripSeparator1
@@ -4129,128 +4219,6 @@ Partial Class Settings
         Me.Panel1.Padding = New System.Windows.Forms.Padding(5, 3, 3, 0)
         Me.Panel1.Size = New System.Drawing.Size(184, 486)
         Me.Panel1.TabIndex = 23
-        '
-        'my_lineh
-        '
-        Me.my_lineh.Image = Global.Film_Info__Organizer.My.Resources.Resources.line1
-        Me.my_lineh.Location = New System.Drawing.Point(185, 42)
-        Me.my_lineh.Name = "my_lineh"
-        Me.my_lineh.Size = New System.Drawing.Size(40, 2)
-        Me.my_lineh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.my_lineh.TabIndex = 17
-        Me.my_lineh.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.PictureBox8.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox8.Location = New System.Drawing.Point(184, 0)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(1, 486)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox8.TabIndex = 18
-        Me.PictureBox8.TabStop = False
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(251, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.LinkLabel23)
-        Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
-        Me.Panel2.Controls.Add(Me.PictureBox26)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 486)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(602, 49)
-        Me.Panel2.TabIndex = 29
-        '
-        'PictureBox26
-        '
-        Me.PictureBox26.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PictureBox26.Image = Global.Film_Info__Organizer.My.Resources.Resources.infobar
-        Me.PictureBox26.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox26.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(602, 41)
-        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox26.TabIndex = 66
-        Me.PictureBox26.TabStop = False
-        '
-        'GroupBox51
-        '
-        Me.GroupBox51.Controls.Add(Me.Label77)
-        Me.GroupBox51.Controls.Add(Me.FFProbeinfopic)
-        Me.GroupBox51.Controls.Add(Me.FFProbeinstallbut)
-        Me.GroupBox51.Controls.Add(Me.FFProbeInstalled)
-        Me.GroupBox51.Location = New System.Drawing.Point(8, 148)
-        Me.GroupBox51.Name = "GroupBox51"
-        Me.GroupBox51.Size = New System.Drawing.Size(384, 67)
-        Me.GroupBox51.TabIndex = 21
-        Me.GroupBox51.TabStop = False
-        Me.GroupBox51.Text = "FFProbe"
-        '
-        'FFProbeinfopic
-        '
-        Me.FFProbeinfopic.Image = Global.Film_Info__Organizer.Toolbar16.Abbrechen
-        Me.FFProbeinfopic.Location = New System.Drawing.Point(15, 21)
-        Me.FFProbeinfopic.Name = "FFProbeinfopic"
-        Me.FFProbeinfopic.Size = New System.Drawing.Size(16, 16)
-        Me.FFProbeinfopic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.FFProbeinfopic.TabIndex = 4
-        Me.FFProbeinfopic.TabStop = False
-        '
-        'FFProbeinstallbut
-        '
-        Me.FFProbeinstallbut.Location = New System.Drawing.Point(286, 16)
-        Me.FFProbeinstallbut.Name = "FFProbeinstallbut"
-        Me.FFProbeinstallbut.Size = New System.Drawing.Size(92, 23)
-        Me.FFProbeinstallbut.TabIndex = 3
-        Me.FFProbeinstallbut.Text = "Download"
-        Me.FFProbeinstallbut.UseVisualStyleBackColor = True
-        '
-        'FFProbeInstalled
-        '
-        Me.FFProbeInstalled.AutoSize = True
-        Me.FFProbeInstalled.Location = New System.Drawing.Point(37, 22)
-        Me.FFProbeInstalled.Name = "FFProbeInstalled"
-        Me.FFProbeInstalled.Size = New System.Drawing.Size(95, 15)
-        Me.FFProbeInstalled.TabIndex = 2
-        Me.FFProbeInstalled.Text = "Aktuelle Version:"
-        '
-        'Label77
-        '
-        Me.Label77.ForeColor = System.Drawing.SystemColors.GrayText
-        Me.Label77.Location = New System.Drawing.Point(10, 40)
-        Me.Label77.Name = "Label77"
-        Me.Label77.Size = New System.Drawing.Size(368, 18)
-        Me.Label77.TabIndex = 22
-        Me.Label77.Text = "Wichtig für xbmc"
-        '
-        'LinkLabel21
-        '
-        Me.LinkLabel21.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.LinkLabel21.HoverColor = System.Drawing.Color.Empty
-        Me.LinkLabel21.Image = Nothing
-        Me.LinkLabel21.Location = New System.Drawing.Point(350, 83)
-        Me.LinkLabel21.Name = "LinkLabel21"
-        Me.LinkLabel21.RegularColor = System.Drawing.Color.Empty
-        Me.LinkLabel21.Size = New System.Drawing.Size(29, 16)
-        Me.LinkLabel21.TabIndex = 7
-        Me.LinkLabel21.Text = "Info"
-        '
-        'TreeView_filter
-        '
-        Me.TreeView_filter._Autosize = False
-        Me.TreeView_filter.AllowDrop = True
-        Me.TreeView_filter.FullRowSelect = True
-        Me.TreeView_filter.HideSelection = False
-        Me.TreeView_filter.HotTracking = True
-        Me.TreeView_filter.ItemHeight = 20
-        Me.TreeView_filter.Location = New System.Drawing.Point(6, 70)
-        Me.TreeView_filter.Name = "TreeView_filter"
-        Me.TreeView_filter.ShowLines = False
-        Me.TreeView_filter.ShowRootLines = False
-        Me.TreeView_filter.Size = New System.Drawing.Size(367, 275)
-        Me.TreeView_filter.TabIndex = 10
         '
         'TreeViewVista1
         '
@@ -4363,17 +4331,38 @@ Partial Class Settings
         Me.TreeViewVista1.Size = New System.Drawing.Size(176, 483)
         Me.TreeViewVista1.TabIndex = 8
         '
-        'LinkLabel22
+        'my_lineh
         '
-        Me.LinkLabel22.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.LinkLabel22.HoverColor = System.Drawing.Color.Empty
-        Me.LinkLabel22.Image = Nothing
-        Me.LinkLabel22.Location = New System.Drawing.Point(353, 100)
-        Me.LinkLabel22.Name = "LinkLabel22"
-        Me.LinkLabel22.RegularColor = System.Drawing.Color.Empty
-        Me.LinkLabel22.Size = New System.Drawing.Size(29, 16)
-        Me.LinkLabel22.TabIndex = 16
-        Me.LinkLabel22.Text = "Info"
+        Me.my_lineh.Image = Global.Film_Info__Organizer.My.Resources.Resources.line1
+        Me.my_lineh.Location = New System.Drawing.Point(185, 42)
+        Me.my_lineh.Name = "my_lineh"
+        Me.my_lineh.Size = New System.Drawing.Size(40, 2)
+        Me.my_lineh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.my_lineh.TabIndex = 17
+        Me.my_lineh.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.PictureBox8.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox8.Location = New System.Drawing.Point(184, 0)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(1, 486)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox8.TabIndex = 18
+        Me.PictureBox8.TabStop = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(251, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.LinkLabel23)
+        Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
+        Me.Panel2.Controls.Add(Me.PictureBox26)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel2.Location = New System.Drawing.Point(0, 486)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(602, 49)
+        Me.Panel2.TabIndex = 29
         '
         'LinkLabel23
         '
@@ -4387,6 +4376,24 @@ Partial Class Settings
         Me.LinkLabel23.TabIndex = 28
         Me.LinkLabel23.Text = "Einstellungen für diese Seite zurücksetzen"
         '
+        'PictureBox26
+        '
+        Me.PictureBox26.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PictureBox26.Image = Global.Film_Info__Organizer.My.Resources.Resources.infobar
+        Me.PictureBox26.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox26.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.Size = New System.Drawing.Size(602, 41)
+        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox26.TabIndex = 66
+        Me.PictureBox26.TabStop = False
+        '
+        'BewertungToolStripMenuItem
+        '
+        Me.BewertungToolStripMenuItem.Name = "BewertungToolStripMenuItem"
+        Me.BewertungToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
+        Me.BewertungToolStripMenuItem.Text = "Bewertung"
+        '
         'Settings
         '
         Me.AcceptButton = Me.OK_Button
@@ -4396,11 +4403,11 @@ Partial Class Settings
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.CancelButton = Me.Cancel_Button
         Me.ClientSize = New System.Drawing.Size(602, 535)
+        Me.Controls.Add(Me.Page_Umbenennen)
         Me.Controls.Add(Me.Page_MediaInfo)
         Me.Controls.Add(Me.Page_CoverandBackdrops)
         Me.Controls.Add(Me.Page_Cache)
         Me.Controls.Add(Me.Page_PluginSave)
-        Me.Controls.Add(Me.Page_Umbenennen)
         Me.Controls.Add(Me.Page_AviMux)
         Me.Controls.Add(Me.Page_Update)
         Me.Controls.Add(Me.Page_Trailer)
@@ -4514,6 +4521,9 @@ Partial Class Settings
         Me.GroupBox28.ResumeLayout(False)
         Me.GroupBox28.PerformLayout()
         Me.Page_MediaInfo.ResumeLayout(False)
+        Me.GroupBox51.ResumeLayout(False)
+        Me.GroupBox51.PerformLayout()
+        CType(Me.FFProbeinfopic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4607,9 +4617,6 @@ Partial Class Settings
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox51.ResumeLayout(False)
-        Me.GroupBox51.PerformLayout()
-        CType(Me.FFProbeinfopic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -4968,5 +4975,6 @@ Partial Class Settings
     Friend WithEvents FFProbeinfopic As System.Windows.Forms.PictureBox
     Friend WithEvents FFProbeinstallbut As System.Windows.Forms.Button
     Friend WithEvents FFProbeInstalled As System.Windows.Forms.Label
+    Friend WithEvents BewertungToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
