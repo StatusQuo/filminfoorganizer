@@ -293,26 +293,7 @@ Module XMLModule
         End If
 
     End Function
-    Private Function GetTMDbid(ByVal imdb As String) As String
-        If imdb = "" Then
-            Return ""
 
-        End If
-        Dim xml As XmlDocument ' Unser Document Container
-
-        xml = New XmlDocument
-
-        Try
-            xml.Load(Einstellungen.UserAbrufen.tmdbapiroot & "Movie.imdbLookup/en/xml/5fe800e9f7891b9131c0059be62a36d0/" & imdb)
-        Catch ex As Exception
-            Return ""
-        End Try
-        Dim r As String = ""
-        r = If(xml.SelectNodes("//id").Count > 0, xml.SelectSingleNode("//id").InnerText, "")
-        Return r
-
-
-    End Function
     Public Sub SaveASMymovies(ByVal m As Movie, Optional ByVal Backup As Boolean = False)
         Dim f As String = "\movie.xml"
         If Backup = True Then
@@ -401,7 +382,9 @@ Module XMLModule
 
                     .WriteStartElement("TMDbId") ' <Person 
                     'If m.TMDBId = "" Then
-                    m.TMDBId = GetTMDbid(m.IMDB_ID)
+                    Dim tm As TMDB_Scrapper = New TMDB_Scrapper()
+
+                    m.TMDBId = tm.GetTMDbid(m.IMDB_ID)
                     'End If
                     .WriteValue(m.TMDBId)
                     .WriteEndElement()

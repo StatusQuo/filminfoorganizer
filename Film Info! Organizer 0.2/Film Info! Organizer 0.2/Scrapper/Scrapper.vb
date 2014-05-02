@@ -2372,7 +2372,7 @@ Public Class TMDB_Scrapper
     Public Overrides Function isLoaded(ByVal s As Search_Result) As Boolean
         Return s.tmdb_loaded
     End Function
-    Private Function GetTMDbid(ByVal imdb As String) As String
+    Public Function GetTMDbid(ByVal imdb As String) As String
         If imdb = "" Then
             Return ""
 
@@ -2383,7 +2383,7 @@ Public Class TMDB_Scrapper
 
         Try
             ' 'https://api.themoviedb.org/3/find/tt0903624?api_key=5fe800e9f7891b9131c0059be62a36d0&external_source=imdb_id
-            xml = MyFunctions.HttploadJsontoXML(Einstellungen.UserAbrufen.tmdbapi3root & "find/" & imdb & "?api_key=" & Einstellungen.UserAbrufen.tmdbapiKey & "&external_source=imdb_id", "")
+            xml = MyFunctions.HttploadJsontoXML(Einstellungen.UserAbrufen.tmdbapi3root & "find/" & imdb & "?api_key=" & apiKey & "&external_source=imdb_id", "tmdb3.find_de_" & imdb)
             ' xml.Load(Einstellungen.UserAbrufen.tmdbapiroot & "Movie.imdbLookup/en/xml/5fe800e9f7891b9131c0059be62a36d0/" & imdb)
         Catch ex As Exception
             Return ""
@@ -2422,14 +2422,14 @@ Public Class TMDB_Scrapper
 
             'Dim darstellercount As Integer = 0
             Dim nxml As Xml.XmlDocument
-            nxml = MyFunctions.HttploadJsontoXML(Einstellungen.UserAbrufen.tmdbapi3root & "/movie/" & s.tmdb_id & "?language=" & Einstellungen.UserAbrufen.tmdbapilanguage & "&api_key=" & Einstellungen.UserAbrufen.tmdbapiKey, "tmdb3.getinfo_de_" & s.tmdb_id)
+            nxml = MyFunctions.HttploadJsontoXML(Einstellungen.UserAbrufen.tmdbapi3root & "movie/" & s.tmdb_id & "?language=" & Einstellungen.UserAbrufen.tmdbapilanguage & "&api_key=" & Einstellungen.UserAbrufen.tmdbapiKey, "tmdb3.getinfo_de_" & s.tmdb_id)
             'nxml = MyFunctions.HttploadXML("http://ofdbgw.home-of-root.de/movie/" & s.id)
             Dim xpath As String
             Dim j As Integer
             ' Jeder Knoten der Irgendwo im Dokument vorhanden ist 
             ' und "Pfad heisst"
             ' In diesem Beispiel liegt nur ein solcher Knoten vor
- 
+
             s.Titel = If(nxml.SelectNodes("//title").Count > 0, nxml.SelectSingleNode("//title").InnerText, "")
             s.Sort = s.Titel
             's.FSK = If(nxml.SelectNodes("//certification").Count > 0, nxml.SelectSingleNode("//certification").InnerText, "")
@@ -2495,7 +2495,7 @@ Public Class TMDB_Scrapper
             s.Produktionsland = g
 
 
-            nxml = MyFunctions.HttploadJsontoXML(Einstellungen.UserAbrufen.tmdbapi3root & "/movie/" & s.tmdb_id & "/casts?language=" & Einstellungen.UserAbrufen.tmdbapilanguage & "&api_key=" & Einstellungen.UserAbrufen.tmdbapiKey, "tmdb3.getcast_de_" & s.tmdb_id)
+            nxml = MyFunctions.HttploadJsontoXML(Einstellungen.UserAbrufen.tmdbapi3root & "movie/" & s.tmdb_id & "/casts?language=" & Einstellungen.UserAbrufen.tmdbapilanguage & "&api_key=" & Einstellungen.UserAbrufen.tmdbapiKey, "tmdb3.getcast_de_" & s.tmdb_id)
             xpath = "//cast"
             'LAND
             Dim author As String = ""
@@ -2517,7 +2517,7 @@ Public Class TMDB_Scrapper
                             darsteller &= " [" & xmln.ChildNodes(2).InnerText.Replace(", ", " | ") & "]"
                         End If
                     End If
-                  
+
 
                 Next
             End If
@@ -2557,7 +2557,7 @@ Public Class TMDB_Scrapper
             End If
 
 
-   
+
             s.Regisseur = regisseur
             s.Autoren = author
             s.Darsteller = darsteller
@@ -2584,12 +2584,16 @@ Public Class TMDB_Scrapper
 
     Public Overrides Function Search(ByVal s As String) As List(Of Search_Result)
         Dim nxml As Xml.XmlDocument
-        nxml = MyFunctions.HttploadXML(Einstellungen.UserAbrufen.tmdbapiroot & "Movie.search/de/xml/" & apiKey & "/" & s, "tmdb.search_de_" & Renamer.CheckInvalid_F(s))
+
+        'http://api.themoviedb.org/3/search/movie?api_key=5fe800e9f7891b9131c0059be62a36d0&query=v%C3%B6g&search_type=ngram&language=de
+        nxml = MyFunctions.HttploadJsontoXML(Einstellungen.UserAbrufen.tmdbapi3root & "search/movie?api_key=" & apiKey & "&search_type=ngram&language=de&" & "query=" & s, "tmdb3.search_de_" & s)
+
+        ' nxml = MyFunctions.HttploadXML(Einstellungen.UserAbrufen.tmdbapiroot & "Movie.search/de/xml/" & apiKey & "/" & s, "tmdb.search_de_" & Renamer.CheckInvalid_F(s))
         If IsNothing(nxml) Then Return Nothing
         Dim xpath As String
         Dim j As Integer
 
-        xpath = "//movie"
+        xpath = "//results"
 
         ' Dokumentgruppe,Dokument,Datei,Pfad
         ' Container für unseren aktiven Knoten
@@ -2610,20 +2614,20 @@ Public Class TMDB_Scrapper
 
                     For y As Integer = 0 To cn.Count - 1
                         Select Case cn(y).Name
-                            Case Is = "original_name"
+                            Case Is = "original_title"
                                 sr.Originaltitel = cn(y).InnerText
-                            Case Is = "name"
+                            Case Is = "title"
                                 sr.Titel = cn(y).InnerText
-                            Case Is = "released"
+                            Case Is = "release_date"
                                 sr.Produktionsjahr = cn(y).InnerText
                                 If sr.Produktionsjahr.Length > 4 Then
                                     sr.Produktionsjahr = sr.Produktionsjahr.Substring(0, 4)
                                 End If
                             Case Is = "id"
                                 sr.tmdb_id = cn(y).InnerText
-                            Case Is = "images"
+                            Case Is = "poster_path"
                                 If cn(y).HasChildNodes Then
-                                    sr.imagelink = cn(y).FirstChild.Attributes("url").Value
+                                    '  sr.imagelink = cn(y).FirstChild.Attributes("url").Value
                                 End If
 
 
