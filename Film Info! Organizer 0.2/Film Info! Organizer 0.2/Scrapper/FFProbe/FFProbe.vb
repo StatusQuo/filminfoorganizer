@@ -69,7 +69,7 @@ ByVal cchBuffer As Int32 _
             Dim xml As New Xml.XmlDocument
             xml.LoadXml(Infooutput)
 
-            xml.Save("D:\x.xml")
+            ' xml.Save("D:\x.xml")
 
 
             'Dim r_VideoAuflösung As String = ""
@@ -96,7 +96,7 @@ ByVal cchBuffer As Int32 _
                     r_AudioCodec = i.Attributes("codec_name").Value
 
 
-                ElseIf VideoLogged = False Then
+                ElseIf i.Attributes("codec_type").Value = "video" And VideoLogged = False Then
                     'Dann Video
                     r_width = i.Attributes("width").Value
                     r_height = i.Attributes("height").Value

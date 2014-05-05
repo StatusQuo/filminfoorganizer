@@ -2495,7 +2495,7 @@ Public Class TMDB_Scrapper
             s.Produktionsland = g
 
 
-            nxml = MyFunctions.HttploadJsontoXML(Einstellungen.UserAbrufen.tmdbapi3root & "movie/" & s.tmdb_id & "/casts?language=" & Einstellungen.UserAbrufen.tmdbapilanguage & "&api_key=" & Einstellungen.UserAbrufen.tmdbapiKey, "tmdb3.getcast_de_" & s.tmdb_id)
+            nxml = MyFunctions.HttploadJsontoXML(Einstellungen.UserAbrufen.tmdbapi3root & "movie/" & s.tmdb_id & "/credits?language=" & Einstellungen.UserAbrufen.tmdbapilanguage & "&api_key=" & Einstellungen.UserAbrufen.tmdbapiKey, "tmdb3.getcast_de_" & s.tmdb_id)
             xpath = "//cast"
             'LAND
             Dim author As String = ""
@@ -2509,12 +2509,16 @@ Public Class TMDB_Scrapper
                     If xmln.ChildNodes.Count > 5 Then
 
                         If darsteller = "" Then
-                            darsteller = xmln.ChildNodes(1).InnerText
+                            darsteller = xmln.SelectSingleNode("name").InnerText
+
+
+
+                            '  darsteller = xmln.ChildNodes(1).InnerText
                         Else
-                            darsteller &= ", " & xmln.ChildNodes(1).InnerText
+                            darsteller &= ", " & xmln.SelectSingleNode("name").InnerText
                         End If
                         If Not xmln.ChildNodes(2).InnerText = "" Then
-                            darsteller &= " [" & xmln.ChildNodes(2).InnerText.Replace(", ", " | ") & "]"
+                            darsteller &= " [" & xmln.SelectSingleNode("character").InnerText.Replace(", ", " | ") & "]"
                         End If
                     End If
 
@@ -2626,6 +2630,8 @@ Public Class TMDB_Scrapper
                             Case Is = "id"
                                 sr.tmdb_id = cn(y).InnerText
                             Case Is = "poster_path"
+
+                                sr.imagelink = Einstellungen.UserAbrufen.tmdbapibase_url & "w300" & cn(y).InnerText
                                 If cn(y).HasChildNodes Then
                                     '  sr.imagelink = cn(y).FirstChild.Attributes("url").Value
                                 End If

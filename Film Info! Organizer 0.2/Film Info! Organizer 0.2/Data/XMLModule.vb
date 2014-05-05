@@ -301,12 +301,8 @@ Module XMLModule
         End If
         Dim path As String = m.Pfad
         If RemoveWriteProtection(path + f) = True Then
-
-
             Try
-
                 Dim enc As New System.Text.UTF8Encoding
-
                 ' XmlTextWriter-Objekt für unsere Ausgabedatei erzeugen: 
                 Dim XMLobj As Xml.XmlTextWriter _
                   = New Xml.XmlTextWriter(path + f, enc)
@@ -360,27 +356,22 @@ Module XMLModule
                     End If
 
                     .WriteEndElement()
-
-
-
-
-                    .WriteStartElement("Description") ' <Person 
+                    .WriteStartElement("Description")
                     .WriteValue(m.Inhalt)
                     .WriteEndElement()
-                    .WriteStartElement("Type") ' <Person 
+                    .WriteStartElement("Type")
                     .WriteValue(m.Typ)
                     .WriteEndElement()
-                    .WriteStartElement("AspectRatio") ' <Person 
+                    .WriteStartElement("AspectRatio")
                     .WriteValue(m.VideoSeitenverhältnis)
                     .WriteEndElement()
-                    .WriteStartElement("LockData") ' <Person 
+                    .WriteStartElement("LockData")
                     .WriteValue(m.LockData)
                     .WriteEndElement()
-                    .WriteStartElement("IMDB") ' <Person 
+                    .WriteStartElement("IMDB")
                     .WriteValue(m.IMDB_ID)
                     .WriteEndElement()
-
-                    .WriteStartElement("TMDbId") ' <Person 
+                    .WriteStartElement("TMDbId")
                     'If m.TMDBId = "" Then
                     Dim tm As TMDB_Scrapper = New TMDB_Scrapper()
 
