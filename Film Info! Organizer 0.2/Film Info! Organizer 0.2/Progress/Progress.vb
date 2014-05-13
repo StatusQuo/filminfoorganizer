@@ -2226,11 +2226,19 @@ Public Class Progress_MediaInfo
         'laden.Close()
         If li.Count = 1 Then
             If MainForm.SelectedMovie Is li(0) Then
-                prov.WritetoPanel()
-                ffprov.WritetoPanel()
+                If Einstellungen.Config_MediaCenter.Default_local_Source = Savemode.nfo Then
+                    ffprov.WritetoPanel()
+                Else
+                    prov.WritetoPanel()
+                End If
                 MainForm.InfoPanel_Movie1.InfoTabs3.SelectTab(2)
             Else
-                prov.WritetoMovie(li(0))
+                If Einstellungen.Config_MediaCenter.Default_local_Source = Savemode.nfo Then
+                    prov.WritetoMovie(li(0))
+                Else
+                    prov.WritetoMovie(li(0))
+                End If
+
                 li(0).SaveFile()
                 li(0).Refresh()
             End If

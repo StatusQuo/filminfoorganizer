@@ -24,24 +24,24 @@ Partial Class MForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MForm))
-        Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Ordner", 1, 1)
-        Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Favoriten", 3, 3)
-        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Filme")
-        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("", -2, -2)
-        Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Serien", 2, 2)
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Ordner", 1, 1)
+        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Favoriten", 3, 3)
+        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Filme")
+        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("", -2, -2)
+        Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Serien", 2, 2)
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TreeviewImagelist = New System.Windows.Forms.ImageList(Me.components)
         Me.Nov_Main = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton11 = New System.Windows.Forms.ToolStripButton()
@@ -58,7 +58,7 @@ Partial Class MForm
         Me.ExportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenu_Export = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolStripMenuItem75 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem_Exportieren = New System.Windows.Forms.ToolStripMenuItem()
+        Me.exp_menu_export = New System.Windows.Forms.ToolStripMenuItem()
         Me.MediaInfo_tool = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip_Suche = New System.Windows.Forms.ToolStripSplitButton()
         Me.DropDownMenu_Suche = New System.Windows.Forms.ContextMenuStrip(Me.components)
@@ -68,7 +68,6 @@ Partial Class MForm
         Me.ToolStripSeparator52 = New System.Windows.Forms.ToolStripSeparator()
         Me.IMDBVerwenden_DropDownMenu_Item = New System.Windows.Forms.ToolStripMenuItem()
         Me.Genre_DropDownMenu_Item = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Exp_Suche = New System.Windows.Forms.ToolStripSplitButton()
         Me.Cover_Tool = New System.Windows.Forms.ToolStripSplitButton()
         Me.DropDownMenu_Cover = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolStripMenuItem43 = New System.Windows.Forms.ToolStripMenuItem()
@@ -78,6 +77,7 @@ Partial Class MForm
         Me.ToolStripMenuItem74 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator63 = New System.Windows.Forms.ToolStripSeparator()
         Me.TrailerLadenToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.exp_Download = New System.Windows.Forms.ToolStripSplitButton()
         Me.Tool_Rename = New System.Windows.Forms.ToolStripButton()
         Me.openselfolder_tool = New System.Windows.Forms.ToolStripButton()
         Me.Apspielen_tool = New System.Windows.Forms.ToolStripButton()
@@ -101,8 +101,8 @@ Partial Class MForm
         Me.NavigationsleisteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InfoPanelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator43 = New Film_Info__Organizer.ToolStripSeperator2()
-        Me.exp_menu_export = New System.Windows.Forms.ToolStripMenuItem()
-        Me.exp_Download = New System.Windows.Forms.ToolStripSplitButton()
+        Me.ToolStripMenuItem_Exportieren = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Exp_Suche = New System.Windows.Forms.ToolStripSplitButton()
         Me.DropDown_Trailer = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.TrailerAuswählenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AutomatischToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -156,7 +156,6 @@ Partial Class MForm
         Me.ToolStripLabel_SammlungenOPT = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripTextBox2 = New System.Windows.Forms.ToolStripTextBox()
         Me.HinzufügenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.exp_menu_Sammlung = New System.Windows.Forms.ToolStripMenuItem()
         Me.MarkierungToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenu_Flags = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.KeineMarkierungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -169,7 +168,6 @@ Partial Class MForm
         Me.InfoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.DownloadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WichtigToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MarkierungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator34 = New System.Windows.Forms.ToolStripSeparator()
         Me.SicherungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SicherungErstellenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -211,6 +209,8 @@ Partial Class MForm
         Me.FehlerMeldenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator28 = New System.Windows.Forms.ToolStripSeparator()
         Me.InfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.exp_menu_Sammlung = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MarkierungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabImages = New System.Windows.Forms.ImageList(Me.components)
         Me.ContextMenu_TextBox = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.RückgäningToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -794,7 +794,7 @@ Partial Class MForm
         '
         Me.ContextMenu_Export.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem75})
         Me.ContextMenu_Export.Name = "ContextMenu_Export"
-        Me.ContextMenu_Export.OwnerItem = Me.exp_menu_export
+        Me.ContextMenu_Export.OwnerItem = Me.ToolStripMenuItem_Exportieren
         Me.ContextMenu_Export.Size = New System.Drawing.Size(199, 26)
         '
         'ToolStripMenuItem75
@@ -803,13 +803,14 @@ Partial Class MForm
         Me.ToolStripMenuItem75.Size = New System.Drawing.Size(198, 22)
         Me.ToolStripMenuItem75.Text = "Moviesheet vorbereiten"
         '
-        'ToolStripMenuItem_Exportieren
+        'exp_menu_export
         '
-        Me.ToolStripMenuItem_Exportieren.DropDown = Me.ContextMenu_Export
-        Me.ToolStripMenuItem_Exportieren.Image = CType(resources.GetObject("ToolStripMenuItem_Exportieren.Image"), System.Drawing.Image)
-        Me.ToolStripMenuItem_Exportieren.Name = "ToolStripMenuItem_Exportieren"
-        Me.ToolStripMenuItem_Exportieren.Size = New System.Drawing.Size(228, 22)
-        Me.ToolStripMenuItem_Exportieren.Text = "Exportieren"
+        Me.exp_menu_export.DropDown = Me.ContextMenu_Export
+        Me.exp_menu_export.Image = Global.Film_Info__Organizer.Toolbar16.Export
+        Me.exp_menu_export.Name = "exp_menu_export"
+        Me.exp_menu_export.Size = New System.Drawing.Size(228, 22)
+        Me.exp_menu_export.Text = "Exportieren"
+        Me.exp_menu_export.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         '
         'MediaInfo_tool
         '
@@ -842,7 +843,7 @@ Partial Class MForm
         '
         Me.DropDownMenu_Suche.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SchnelleSuche_DropDownMenu_Item, Me.NormaleSuche_DropDownMenu_Item, Me.ExacteSuche_DropDownMenu_Item, Me.ToolStripSeparator52, Me.IMDBVerwenden_DropDownMenu_Item, Me.Genre_DropDownMenu_Item})
         Me.DropDownMenu_Suche.Name = "DropDownMenu_Suche"
-        Me.DropDownMenu_Suche.OwnerItem = Me.ToolStrip_Suche
+        Me.DropDownMenu_Suche.OwnerItem = Me.Exp_Suche
         Me.DropDownMenu_Suche.Size = New System.Drawing.Size(181, 120)
         '
         'SchnelleSuche_DropDownMenu_Item
@@ -886,22 +887,6 @@ Partial Class MForm
         Me.Genre_DropDownMenu_Item.Size = New System.Drawing.Size(180, 22)
         Me.Genre_DropDownMenu_Item.Text = "Genre"
         '
-        'Exp_Suche
-        '
-        Me.Exp_Suche.AutoToolTip = False
-        Me.Exp_Suche.DropDown = Me.DropDownMenu_Suche
-        Me.Exp_Suche.DropDownButtonWidth = 16
-        Me.Exp_Suche.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.Exp_Suche.Image = CType(resources.GetObject("Exp_Suche.Image"), System.Drawing.Image)
-        Me.Exp_Suche.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Exp_Suche.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.Exp_Suche.Margin = New System.Windows.Forms.Padding(3)
-        Me.Exp_Suche.Name = "Exp_Suche"
-        Me.Exp_Suche.Padding = New System.Windows.Forms.Padding(6, 3, 6, 3)
-        Me.Exp_Suche.Size = New System.Drawing.Size(95, 26)
-        Me.Exp_Suche.Text = "Suchen"
-        Me.Exp_Suche.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
-        '
         'Cover_Tool
         '
         Me.Cover_Tool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -919,7 +904,7 @@ Partial Class MForm
         '
         Me.DropDownMenu_Cover.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem43, Me.ToolStripMenuItem72, Me.ToolStripSeparator9, Me.ToolStripMenuItem73, Me.ToolStripMenuItem74, Me.ToolStripSeparator63, Me.TrailerLadenToolStripMenuItem2})
         Me.DropDownMenu_Cover.Name = "DropDownMenu_Cover"
-        Me.DropDownMenu_Cover.OwnerItem = Me.exp_Download
+        Me.DropDownMenu_Cover.OwnerItem = Me.Cover_Tool
         Me.DropDownMenu_Cover.Size = New System.Drawing.Size(177, 126)
         '
         'ToolStripMenuItem43
@@ -964,6 +949,22 @@ Partial Class MForm
         Me.TrailerLadenToolStripMenuItem2.Name = "TrailerLadenToolStripMenuItem2"
         Me.TrailerLadenToolStripMenuItem2.Size = New System.Drawing.Size(176, 22)
         Me.TrailerLadenToolStripMenuItem2.Text = "Trailer laden"
+        '
+        'exp_Download
+        '
+        Me.exp_Download.AutoToolTip = False
+        Me.exp_Download.DropDown = Me.DropDownMenu_Cover
+        Me.exp_Download.DropDownButtonWidth = 16
+        Me.exp_Download.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.exp_Download.Image = CType(resources.GetObject("exp_Download.Image"), System.Drawing.Image)
+        Me.exp_Download.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.exp_Download.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.exp_Download.Margin = New System.Windows.Forms.Padding(3)
+        Me.exp_Download.Name = "exp_Download"
+        Me.exp_Download.Padding = New System.Windows.Forms.Padding(6, 3, 6, 3)
+        Me.exp_Download.Size = New System.Drawing.Size(110, 26)
+        Me.exp_Download.Text = "Download"
+        Me.exp_Download.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
         '
         'Tool_Rename
         '
@@ -1156,30 +1157,29 @@ Partial Class MForm
         Me.ToolStripSeparator43.Size = New System.Drawing.Size(8, 32)
         Me.ToolStripSeparator43.Visible = False
         '
-        'exp_menu_export
+        'ToolStripMenuItem_Exportieren
         '
-        Me.exp_menu_export.DropDown = Me.ContextMenu_Export
-        Me.exp_menu_export.Image = Global.Film_Info__Organizer.Toolbar16.Export
-        Me.exp_menu_export.Name = "exp_menu_export"
-        Me.exp_menu_export.Size = New System.Drawing.Size(228, 22)
-        Me.exp_menu_export.Text = "Exportieren"
-        Me.exp_menu_export.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.ToolStripMenuItem_Exportieren.DropDown = Me.ContextMenu_Export
+        Me.ToolStripMenuItem_Exportieren.Image = CType(resources.GetObject("ToolStripMenuItem_Exportieren.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem_Exportieren.Name = "ToolStripMenuItem_Exportieren"
+        Me.ToolStripMenuItem_Exportieren.Size = New System.Drawing.Size(228, 22)
+        Me.ToolStripMenuItem_Exportieren.Text = "Exportieren"
         '
-        'exp_Download
+        'Exp_Suche
         '
-        Me.exp_Download.AutoToolTip = False
-        Me.exp_Download.DropDown = Me.DropDownMenu_Cover
-        Me.exp_Download.DropDownButtonWidth = 16
-        Me.exp_Download.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.exp_Download.Image = CType(resources.GetObject("exp_Download.Image"), System.Drawing.Image)
-        Me.exp_Download.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.exp_Download.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.exp_Download.Margin = New System.Windows.Forms.Padding(3)
-        Me.exp_Download.Name = "exp_Download"
-        Me.exp_Download.Padding = New System.Windows.Forms.Padding(6, 3, 6, 3)
-        Me.exp_Download.Size = New System.Drawing.Size(110, 26)
-        Me.exp_Download.Text = "Download"
-        Me.exp_Download.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
+        Me.Exp_Suche.AutoToolTip = False
+        Me.Exp_Suche.DropDown = Me.DropDownMenu_Suche
+        Me.Exp_Suche.DropDownButtonWidth = 16
+        Me.Exp_Suche.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.Exp_Suche.Image = CType(resources.GetObject("Exp_Suche.Image"), System.Drawing.Image)
+        Me.Exp_Suche.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Exp_Suche.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.Exp_Suche.Margin = New System.Windows.Forms.Padding(3)
+        Me.Exp_Suche.Name = "Exp_Suche"
+        Me.Exp_Suche.Padding = New System.Windows.Forms.Padding(6, 3, 6, 3)
+        Me.Exp_Suche.Size = New System.Drawing.Size(95, 26)
+        Me.Exp_Suche.Text = "Suchen"
+        Me.Exp_Suche.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
         '
         'DropDown_Trailer
         '
@@ -1532,7 +1532,7 @@ Partial Class MForm
         '
         Me.ContextMenu_Sammlung.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel_SammlungenOPT, Me.ToolStripTextBox2, Me.HinzufügenToolStripMenuItem})
         Me.ContextMenu_Sammlung.Name = "ContextMenu_Export"
-        Me.ContextMenu_Sammlung.OwnerItem = Me.SammlungToolStripMenuItem
+        Me.ContextMenu_Sammlung.OwnerItem = Me.exp_menu_Sammlung
         Me.ContextMenu_Sammlung.Size = New System.Drawing.Size(211, 69)
         '
         'ToolStripLabel_SammlungenOPT
@@ -1553,14 +1553,6 @@ Partial Class MForm
         Me.HinzufügenToolStripMenuItem.Size = New System.Drawing.Size(210, 22)
         Me.HinzufügenToolStripMenuItem.Text = "Hinzufügen"
         '
-        'exp_menu_Sammlung
-        '
-        Me.exp_menu_Sammlung.DropDown = Me.ContextMenu_Sammlung
-        Me.exp_menu_Sammlung.Image = Global.Film_Info__Organizer.Toolbar16.Papergrp
-        Me.exp_menu_Sammlung.Name = "exp_menu_Sammlung"
-        Me.exp_menu_Sammlung.Size = New System.Drawing.Size(228, 22)
-        Me.exp_menu_Sammlung.Text = "Sammlung"
-        '
         'MarkierungToolStripMenuItem1
         '
         Me.MarkierungToolStripMenuItem1.DropDown = Me.ContextMenu_Flags
@@ -1572,7 +1564,7 @@ Partial Class MForm
         '
         Me.ContextMenu_Flags.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KeineMarkierungToolStripMenuItem, Me.FragezeichenToolStripMenuItem, Me.NeuToolStripMenuItem, Me.MarkiertToolStripMenuItem, Me.ToolStripSeparator60, Me.CoverToolStripMenuItem, Me.FanartToolStripMenuItem, Me.InfoToolStripMenuItem1, Me.DownloadToolStripMenuItem, Me.WichtigToolStripMenuItem})
         Me.ContextMenu_Flags.Name = "ContextMenu_Flags"
-        Me.ContextMenu_Flags.OwnerItem = Me.MarkierungToolStripMenuItem1
+        Me.ContextMenu_Flags.OwnerItem = Me.MarkierungToolStripMenuItem
         Me.ContextMenu_Flags.Size = New System.Drawing.Size(168, 208)
         '
         'KeineMarkierungToolStripMenuItem
@@ -1641,13 +1633,6 @@ Partial Class MForm
         Me.WichtigToolStripMenuItem.Name = "WichtigToolStripMenuItem"
         Me.WichtigToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.WichtigToolStripMenuItem.Text = "Wichtig"
-        '
-        'MarkierungToolStripMenuItem
-        '
-        Me.MarkierungToolStripMenuItem.DropDown = Me.ContextMenu_Flags
-        Me.MarkierungToolStripMenuItem.Name = "MarkierungToolStripMenuItem"
-        Me.MarkierungToolStripMenuItem.Size = New System.Drawing.Size(228, 22)
-        Me.MarkierungToolStripMenuItem.Text = "Markierung"
         '
         'ToolStripSeparator34
         '
@@ -1920,6 +1905,21 @@ Partial Class MForm
         Me.InfoToolStripMenuItem.Name = "InfoToolStripMenuItem"
         Me.InfoToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.InfoToolStripMenuItem.Text = "Über..."
+        '
+        'exp_menu_Sammlung
+        '
+        Me.exp_menu_Sammlung.DropDown = Me.ContextMenu_Sammlung
+        Me.exp_menu_Sammlung.Image = Global.Film_Info__Organizer.Toolbar16.Papergrp
+        Me.exp_menu_Sammlung.Name = "exp_menu_Sammlung"
+        Me.exp_menu_Sammlung.Size = New System.Drawing.Size(228, 22)
+        Me.exp_menu_Sammlung.Text = "Sammlung"
+        '
+        'MarkierungToolStripMenuItem
+        '
+        Me.MarkierungToolStripMenuItem.DropDown = Me.ContextMenu_Flags
+        Me.MarkierungToolStripMenuItem.Name = "MarkierungToolStripMenuItem"
+        Me.MarkierungToolStripMenuItem.Size = New System.Drawing.Size(228, 22)
+        Me.MarkierungToolStripMenuItem.Text = "Markierung"
         '
         'TabImages
         '
@@ -2276,15 +2276,15 @@ Partial Class MForm
         Me.TreeViewVista1.ItemHeight = 20
         Me.TreeViewVista1.Location = New System.Drawing.Point(2, 2)
         Me.TreeViewVista1.Name = "TreeViewVista1"
-        TreeNode6.ImageIndex = 1
-        TreeNode6.Name = "Knoten1"
-        TreeNode6.SelectedImageIndex = 1
-        TreeNode6.Text = "Ordner"
-        TreeNode7.ImageIndex = 3
-        TreeNode7.Name = "Knoten0"
-        TreeNode7.SelectedImageIndex = 3
-        TreeNode7.Text = "Favoriten"
-        Me.TreeViewVista1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode6, TreeNode7})
+        TreeNode1.ImageIndex = 1
+        TreeNode1.Name = "Knoten1"
+        TreeNode1.SelectedImageIndex = 1
+        TreeNode1.Text = "Ordner"
+        TreeNode2.ImageIndex = 3
+        TreeNode2.Name = "Knoten0"
+        TreeNode2.SelectedImageIndex = 3
+        TreeNode2.Text = "Favoriten"
+        Me.TreeViewVista1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2})
         Me.TreeViewVista1.SelectedImageIndex = 0
         Me.TreeViewVista1.ShowLines = False
         Me.TreeViewVista1.Size = New System.Drawing.Size(160, 317)
@@ -2321,17 +2321,17 @@ Partial Class MForm
         Me.Navigationsleiste.ItemHeight = 20
         Me.Navigationsleiste.Location = New System.Drawing.Point(2, 52)
         Me.Navigationsleiste.Name = "Navigationsleiste"
-        TreeNode1.Name = "Knoten0"
-        TreeNode1.Text = "Filme"
-        TreeNode2.ImageIndex = -2
-        TreeNode2.Name = "Knoten1"
-        TreeNode2.SelectedImageIndex = -2
-        TreeNode2.Text = ""
-        TreeNode8.ImageIndex = 2
-        TreeNode8.Name = "Se"
-        TreeNode8.SelectedImageIndex = 2
-        TreeNode8.Text = "Serien"
-        Me.Navigationsleiste.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode8})
+        TreeNode3.Name = "Knoten0"
+        TreeNode3.Text = "Filme"
+        TreeNode4.ImageIndex = -2
+        TreeNode4.Name = "Knoten1"
+        TreeNode4.SelectedImageIndex = -2
+        TreeNode4.Text = ""
+        TreeNode5.ImageIndex = 2
+        TreeNode5.Name = "Se"
+        TreeNode5.SelectedImageIndex = 2
+        TreeNode5.Text = "Serien"
+        Me.Navigationsleiste.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode3, TreeNode4, TreeNode5})
         Me.Navigationsleiste.SelectedImageIndex = 0
         Me.Navigationsleiste.ShowLines = False
         Me.Navigationsleiste.Size = New System.Drawing.Size(157, 256)
@@ -2635,7 +2635,7 @@ Partial Class MForm
         Me.SplitContainer_Infopanel.Panel2.Controls.Add(Me.InfoPanel_Episode1)
         Me.SplitContainer_Infopanel.Panel2.Cursor = System.Windows.Forms.Cursors.Default
         Me.SplitContainer_Infopanel.Size = New System.Drawing.Size(930, 517)
-        Me.SplitContainer_Infopanel.SplitterDistance = 699
+        Me.SplitContainer_Infopanel.SplitterDistance = 701
         Me.SplitContainer_Infopanel.SplitterWidth = 2
         Me.SplitContainer_Infopanel.TabIndex = 7
         '
@@ -2645,7 +2645,7 @@ Partial Class MForm
         Me.Panel_Overlay_useImage.AutoSize = True
         Me.Panel_Overlay_useImage.BackColor = System.Drawing.SystemColors.GrayText
         Me.Panel_Overlay_useImage.Controls.Add(Me.Panel8)
-        Me.Panel_Overlay_useImage.Location = New System.Drawing.Point(301, 143)
+        Me.Panel_Overlay_useImage.Location = New System.Drawing.Point(303, 143)
         Me.Panel_Overlay_useImage.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel_Overlay_useImage.Name = "Panel_Overlay_useImage"
         Me.Panel_Overlay_useImage.Padding = New System.Windows.Forms.Padding(1, 0, 1, 1)
@@ -2722,7 +2722,7 @@ Partial Class MForm
         Me.Panel_q_Trailer.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel_q_Trailer.BackColor = System.Drawing.SystemColors.GrayText
         Me.Panel_q_Trailer.Controls.Add(Me.Panel9)
-        Me.Panel_q_Trailer.Location = New System.Drawing.Point(301, 306)
+        Me.Panel_q_Trailer.Location = New System.Drawing.Point(303, 306)
         Me.Panel_q_Trailer.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel_q_Trailer.Name = "Panel_q_Trailer"
         Me.Panel_q_Trailer.Padding = New System.Windows.Forms.Padding(1, 0, 1, 1)
@@ -2760,7 +2760,7 @@ Partial Class MForm
         Me.Panel_flagquestion.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel_flagquestion.BackColor = System.Drawing.SystemColors.GrayText
         Me.Panel_flagquestion.Controls.Add(Me.Panel2)
-        Me.Panel_flagquestion.Location = New System.Drawing.Point(301, 241)
+        Me.Panel_flagquestion.Location = New System.Drawing.Point(303, 241)
         Me.Panel_flagquestion.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel_flagquestion.Name = "Panel_flagquestion"
         Me.Panel_flagquestion.Padding = New System.Windows.Forms.Padding(1)
@@ -2838,7 +2838,7 @@ Partial Class MForm
         Me.Panel_ask_selectmovie.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel_ask_selectmovie.BackColor = System.Drawing.SystemColors.GrayText
         Me.Panel_ask_selectmovie.Controls.Add(Me.Panel7)
-        Me.Panel_ask_selectmovie.Location = New System.Drawing.Point(301, 87)
+        Me.Panel_ask_selectmovie.Location = New System.Drawing.Point(303, 87)
         Me.Panel_ask_selectmovie.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel_ask_selectmovie.Name = "Panel_ask_selectmovie"
         Me.Panel_ask_selectmovie.Padding = New System.Windows.Forms.Padding(1, 0, 1, 1)
@@ -2878,18 +2878,18 @@ Partial Class MForm
         Me.Movie_GridView.AllowUserToDeleteRows = False
         Me.Movie_GridView.AllowUserToOrderColumns = True
         Me.Movie_GridView.AllowUserToResizeRows = False
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.Movie_GridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.Movie_GridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.Movie_GridView.BackgroundColor = System.Drawing.SystemColors.Window
         Me.Movie_GridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Movie_GridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.Movie_GridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.WindowText
-        Me.Movie_GridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText
+        Me.Movie_GridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.Movie_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.Movie_GridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column_Flags, Me.Column_Fortschritt, Me.Column_Rate_Cover, Me.Column_Rate_Backdrops, Me.Column_Rate_Info, Me.Column_Rate_MediaInfo, Me.Column_Rate_Ordner, Me.Column_Pfad, Me.Column_Ordner, Me.Column_Titel, Me.Column_Originaltitel, Me.Column_IMDB_ID, Me.Column_Darsteller, Me.Column_Regie, Me.Column_Autoren, Me.Column_Studios, Me.Column_Produktionsjahr, Me.Column_Produktionsland, Me.Column_Genre, Me.Column_FSK, Me.Column_Bewertung, Me.Column_Spieldauer, Me.Column_Kurzbeschreibung, Me.Column_Inhalt, Me.Column_MediaInfo, Me.Column_Position, Me.Column_Datum, Me.Column_Sort, Me.Column_Auflösung, Me.Column_Seitenverhältnis, Me.Column_VideoBildwiederholungsrate, Me.Column_VideoCodec, Me.Column_AudioKanäle, Me.Column_AudioCodec, Me.Column_Sprachen, Me.Column_FilesCount, Me.Column_SizeFolder, Me.Column_watched, Me.Column_Trailer, Me.Column_Set, Me.Column_Depth})
         Me.Movie_GridView.Dock = System.Windows.Forms.DockStyle.Fill
@@ -2908,7 +2908,7 @@ Partial Class MForm
         Me.Movie_GridView.ShowCellErrors = False
         Me.Movie_GridView.ShowEditingIcon = False
         Me.Movie_GridView.ShowRowErrors = False
-        Me.Movie_GridView.Size = New System.Drawing.Size(699, 492)
+        Me.Movie_GridView.Size = New System.Drawing.Size(701, 492)
         Me.Movie_GridView.TabIndex = 6
         '
         'Column_Flags
@@ -3021,9 +3021,9 @@ Partial Class MForm
         '
         'Column_Darsteller
         '
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
-        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Column_Darsteller.DefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column_Darsteller.DefaultCellStyle = DataGridViewCellStyle3
         Me.Column_Darsteller.HeaderText = "Darsteller"
         Me.Column_Darsteller.Name = "Column_Darsteller"
         Me.Column_Darsteller.ReadOnly = True
@@ -3080,9 +3080,9 @@ Partial Class MForm
         '
         'Column_Bewertung
         '
-        DataGridViewCellStyle17.Format = "N2"
-        DataGridViewCellStyle17.NullValue = "1,00"
-        Me.Column_Bewertung.DefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle4.Format = "N2"
+        DataGridViewCellStyle4.NullValue = "1,00"
+        Me.Column_Bewertung.DefaultCellStyle = DataGridViewCellStyle4
         Me.Column_Bewertung.HeaderText = "Bewertung"
         Me.Column_Bewertung.Name = "Column_Bewertung"
         Me.Column_Bewertung.ReadOnly = True
@@ -3097,9 +3097,9 @@ Partial Class MForm
         '
         'Column_Kurzbeschreibung
         '
-        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
-        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Column_Kurzbeschreibung.DefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column_Kurzbeschreibung.DefaultCellStyle = DataGridViewCellStyle5
         Me.Column_Kurzbeschreibung.HeaderText = "Kurzbeschreibung"
         Me.Column_Kurzbeschreibung.Name = "Column_Kurzbeschreibung"
         Me.Column_Kurzbeschreibung.ReadOnly = True
@@ -3107,9 +3107,9 @@ Partial Class MForm
         '
         'Column_Inhalt
         '
-        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
-        DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Column_Inhalt.DefaultCellStyle = DataGridViewCellStyle19
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column_Inhalt.DefaultCellStyle = DataGridViewCellStyle6
         Me.Column_Inhalt.HeaderText = "Inhalt"
         Me.Column_Inhalt.Name = "Column_Inhalt"
         Me.Column_Inhalt.ReadOnly = True
@@ -3117,9 +3117,9 @@ Partial Class MForm
         '
         'Column_MediaInfo
         '
-        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
-        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Column_MediaInfo.DefaultCellStyle = DataGridViewCellStyle20
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column_MediaInfo.DefaultCellStyle = DataGridViewCellStyle7
         Me.Column_MediaInfo.HeaderText = "Media Info"
         Me.Column_MediaInfo.Name = "Column_MediaInfo"
         Me.Column_MediaInfo.ReadOnly = True
@@ -3377,7 +3377,7 @@ Partial Class MForm
         Me.Nav_Datagrid.Location = New System.Drawing.Point(0, 0)
         Me.Nav_Datagrid.Name = "Nav_Datagrid"
         Me.Nav_Datagrid.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.Nav_Datagrid.Size = New System.Drawing.Size(699, 25)
+        Me.Nav_Datagrid.Size = New System.Drawing.Size(701, 25)
         Me.Nav_Datagrid.TabIndex = 7
         Me.Nav_Datagrid.Text = "ToolStrip1"
         '
@@ -3553,7 +3553,7 @@ Partial Class MForm
         Me.InfoPanel_Movie1.Name = "InfoPanel_Movie1"
         Me.InfoPanel_Movie1.SelectedResult = Nothing
         Me.InfoPanel_Movie1.ShowLinkBar = False
-        Me.InfoPanel_Movie1.Size = New System.Drawing.Size(229, 517)
+        Me.InfoPanel_Movie1.Size = New System.Drawing.Size(227, 517)
         Me.InfoPanel_Movie1.TabIndex = 0
         '
         'InfoPanel_Episode1
@@ -3563,7 +3563,7 @@ Partial Class MForm
         Me.InfoPanel_Episode1.Location = New System.Drawing.Point(0, 0)
         Me.InfoPanel_Episode1.Name = "InfoPanel_Episode1"
         Me.InfoPanel_Episode1.SelectedEpisode = Nothing
-        Me.InfoPanel_Episode1.Size = New System.Drawing.Size(229, 517)
+        Me.InfoPanel_Episode1.Size = New System.Drawing.Size(227, 517)
         Me.InfoPanel_Episode1.TabIndex = 18
         Me.InfoPanel_Episode1.Visible = False
         '
@@ -4837,9 +4837,9 @@ Partial Class MForm
         '
         'DataGridViewTextBoxColumn6
         '
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
-        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle21
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle8
         Me.DataGridViewTextBoxColumn6.HeaderText = "Darsteller"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.Visible = False
@@ -4896,9 +4896,9 @@ Partial Class MForm
         '
         'DataGridViewTextBoxColumn14
         '
-        DataGridViewCellStyle22.Format = "N2"
-        DataGridViewCellStyle22.NullValue = "1,00"
-        Me.DataGridViewTextBoxColumn14.DefaultCellStyle = DataGridViewCellStyle22
+        DataGridViewCellStyle9.Format = "N2"
+        DataGridViewCellStyle9.NullValue = "1,00"
+        Me.DataGridViewTextBoxColumn14.DefaultCellStyle = DataGridViewCellStyle9
         Me.DataGridViewTextBoxColumn14.HeaderText = "Bewertung"
         Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
         Me.DataGridViewTextBoxColumn14.Visible = False
@@ -4913,9 +4913,9 @@ Partial Class MForm
         '
         'DataGridViewTextBoxColumn16
         '
-        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
-        DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn16.DefaultCellStyle = DataGridViewCellStyle23
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn16.DefaultCellStyle = DataGridViewCellStyle10
         Me.DataGridViewTextBoxColumn16.HeaderText = "Kurzbeschreibung"
         Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
         Me.DataGridViewTextBoxColumn16.Visible = False
@@ -4923,9 +4923,9 @@ Partial Class MForm
         '
         'DataGridViewTextBoxColumn17
         '
-        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
-        DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn17.DefaultCellStyle = DataGridViewCellStyle24
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn17.DefaultCellStyle = DataGridViewCellStyle11
         Me.DataGridViewTextBoxColumn17.HeaderText = "Inhalt"
         Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
         Me.DataGridViewTextBoxColumn17.Visible = False
@@ -4933,9 +4933,9 @@ Partial Class MForm
         '
         'DataGridViewTextBoxColumn18
         '
-        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
-        DataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn18.DefaultCellStyle = DataGridViewCellStyle25
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn18.DefaultCellStyle = DataGridViewCellStyle12
         Me.DataGridViewTextBoxColumn18.HeaderText = "Media Info"
         Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
         Me.DataGridViewTextBoxColumn18.Visible = False
@@ -5221,9 +5221,9 @@ Partial Class MForm
         '
         'DataGridViewImageColumn1
         '
-        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle26.NullValue = ".Resources.no_cover_bg"
-        Me.DataGridViewImageColumn1.DefaultCellStyle = DataGridViewCellStyle26
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle13.NullValue = ".Resources.no_cover_bg"
+        Me.DataGridViewImageColumn1.DefaultCellStyle = DataGridViewCellStyle13
         Me.DataGridViewImageColumn1.Frozen = True
         Me.DataGridViewImageColumn1.HeaderText = "Cover"
         Me.DataGridViewImageColumn1.Image = CType(resources.GetObject("DataGridViewImageColumn1.Image"), System.Drawing.Image)
