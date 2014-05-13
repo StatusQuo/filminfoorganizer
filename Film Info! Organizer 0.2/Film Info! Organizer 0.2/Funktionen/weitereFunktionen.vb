@@ -410,20 +410,24 @@ ByVal cchBuffer As Int32 _
                 End Try
             End If
         End If
-        Dim httpRequest As Net.HttpWebRequest = CType(Net.HttpWebRequest.Create(New Uri(q)), Net.HttpWebRequest)
-        httpRequest.Method = "GET"
-        httpRequest.Accept = "*/*"
-        Dim httpResponse As Net.HttpWebResponse
-        httpResponse = CType(httpRequest.GetResponse(), Net.HttpWebResponse)
-        Dim reader As IO.StreamReader = New IO.StreamReader(httpResponse.GetResponseStream)
-        Dim httptext As String = reader.ReadToEnd
-        httpResponse.Close()
+        Try
+            Dim httpRequest As Net.HttpWebRequest = CType(Net.HttpWebRequest.Create(New Uri(q)), Net.HttpWebRequest)
+            httpRequest.Method = "GET"
+            httpRequest.Accept = "*/*"
+            Dim httpResponse As Net.HttpWebResponse
+            httpResponse = CType(httpRequest.GetResponse(), Net.HttpWebResponse)
+            Dim reader As IO.StreamReader = New IO.StreamReader(httpResponse.GetResponseStream)
+            Dim httptext As String = reader.ReadToEnd
+            httpResponse.Close()
 
-        Dim json As String = "{'root': " & httptext & "}"
+            Dim json As String = "{'root': " & httptext & "}"
 
-        Dim nxml As XmlDocument = DirectCast(Newtonsoft.Json.JsonConvert.DeserializeXmlNode(json), XmlDocument)
-        nxml.Save(f)
-        Return nxml
+            Dim nxml As XmlDocument = DirectCast(Newtonsoft.Json.JsonConvert.DeserializeXmlNode(json), XmlDocument)
+            nxml.Save(f)
+            Return nxml
+        Catch ex As Exception
+            Return Nothing
+        End Try
     End Function
     Shared Function HttploadXML(ByVal q As String, ByVal cPath As String) As Xml.XmlDocument
         Dim f As String = IO.Path.Combine(Einstellungen.ChachePath, "Cache\Info\" & cPath & ".xml")
