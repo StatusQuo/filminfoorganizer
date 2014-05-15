@@ -69,7 +69,7 @@ ByVal cchBuffer As Int32 _
             Dim xml As New Xml.XmlDocument
             xml.LoadXml(Infooutput)
 
-            ' xml.Save("D:\x.xml")
+            xml.Save("D:\x.xml")
 
 
             'Dim r_VideoAuflösung As String = ""
@@ -94,8 +94,6 @@ ByVal cchBuffer As Int32 _
                     'Dann audio
                     r_AudioKanäle = i.Attributes("channels").Value
                     r_AudioCodec = i.Attributes("codec_name").Value
-
-
                 ElseIf i.Attributes("codec_type").Value = "video" And VideoLogged = False Then
                     'Dann Video
                     r_width = i.Attributes("width").Value
@@ -153,7 +151,6 @@ ByVal cchBuffer As Int32 _
             If list.Count > 0 Then
                 For x As Integer = 0 To list.Count - 1
                     'If L Is Not Nothing Then
-
                     '    'Laden.Label1.Text = "Rufe Media Info ab... " & x + 1 & "/" & list.Count
                     '    'Laden.ProgressBar1.Value = CInt(((x + 1) / list.Count) * 100)
                     '    'Laden.Refresh()
@@ -161,7 +158,6 @@ ByVal cchBuffer As Int32 _
                     Inform(list(x))
                     list(x).Refresh()
                     list(x).SaveFile()
-
                 Next
             End If
         Catch ex As Exception

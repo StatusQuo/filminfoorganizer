@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("Sebastian Humann")> 
 <Assembly: AssemblyProduct("Film Info! Organizer")> 
-<Assembly: AssemblyCopyright("Copyright © Sebastian Humann 2009-2013")> 
+<Assembly: AssemblyCopyright("Copyright © Sebastian Humann 2009-2014")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(True)> 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' übernehmen, indem Sie "*" eingeben:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("0.6.0.2")> 
-<Assembly: AssemblyFileVersion("0.6.0.2")> 
+<Assembly: AssemblyVersion("0.6.0.5")> 
+<Assembly: AssemblyFileVersion("0.6.0.5")> 
