@@ -898,7 +898,6 @@ Public Class Einstellungen
                 xml = New XmlDocument
                 xml.Load(s)
             Else
-
                 xml = MyFunctions.HttploadJsontoXML(Einstellungen.UserAbrufen.tmdbapi3root & "configuration?api_key=" & Einstellungen.UserAbrufen.tmdbapiKey, "tmdb3.config")
                 xml.Save(s)
             End If
