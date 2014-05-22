@@ -3235,8 +3235,15 @@ Ende:
             InfoPanel_Movie1.Load_item(SelectedMovie)
 
         ElseIf Movie_GridView.SelectedRows.Count > 1 Then
-            Dim p As New Progress_Saver(GetselectedMovies, Einstellungen.Config_MediaCenter.Default_local_Source)
 
+            'saveInfoPanel
+            Dim lm As List(Of Movie) = GetselectedMovies()
+            For x As Integer = 0 To lm.Count - 1
+                lm(x).SaveMoreItems(Einstellungen.Config_MediaCenter.Default_local_Source)
+            Next
+
+            'saveToFile
+            Dim p As New Progress_Saver(GetselectedMovies, Einstellungen.Config_MediaCenter.Default_local_Source)
             p.Run()
         End If
     End Sub

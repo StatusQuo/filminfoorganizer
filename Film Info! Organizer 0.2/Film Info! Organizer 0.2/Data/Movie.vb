@@ -633,6 +633,12 @@ Public Class Movie
         End If
 
     End Sub
+
+    Sub SaveMoreItems(ByVal mode As Savemode, Optional ByVal SaveintoFile As Boolean = False)
+        infopanelsave_moreItems()
+        refreshDatagrid()
+
+    End Sub
     Sub SaveFile(ByVal mode As Savemode)
         XMLModule.Save(Me, mode)
         'Settings abfrage, ob sofort oder später gespeichert werden soll
@@ -724,7 +730,106 @@ Public Class Movie
         Genre = Einstellungen.GenreFilter.ChangeGenre(Genre)
     End Sub
 
+    Private Sub infopanelsave_moreItems()
 
+        If MainForm.InfoPanel_Movie1.TB_AudioKanäle.Text <> String.Empty Then
+            AudioKanäle = MainForm.InfoPanel_Movie1.TB_AudioKanäle.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_AudioCodec.Text <> String.Empty Then
+            AudioCodec = MainForm.InfoPanel_Movie1.TB_AudioCodec.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_VideoAuflösung.Text <> String.Empty Then
+            VideoAuflösung = MainForm.InfoPanel_Movie1.TB_VideoAuflösung.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Autoren.Text <> String.Empty Then
+            Autoren = MainForm.InfoPanel_Movie1.TB_Autoren.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Bewertung.Text <> String.Empty Then
+            Bewertung = MainForm.InfoPanel_Movie1.TB_Bewertung.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_VideoBildwiederholungsrate.Text <> String.Empty Then
+            VideoBildwiederholungsrate = MainForm.InfoPanel_Movie1.TB_VideoBildwiederholungsrate.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Genre.Text <> String.Empty Then
+            Genre = MainForm.InfoPanel_Movie1.TB_Genre.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_IMDB_ID.Text <> String.Empty Then
+            IMDB_ID = MainForm.InfoPanel_Movie1.TB_IMDB_ID.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Inhalt.Text <> String.Empty Then
+            Inhalt = MainForm.InfoPanel_Movie1.TB_Inhalt.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Produktionsjahr.Text <> String.Empty Then
+            Produktionsjahr = MainForm.InfoPanel_Movie1.TB_Produktionsjahr.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Inhalt.Text <> String.Empty Then
+            Kurzbeschreibung = MainForm.InfoPanel_Movie1.TB_Inhalt.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_set.Text <> String.Empty Then
+            Setbox = MainForm.InfoPanel_Movie1.TB_set.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Produktionsland.Text <> String.Empty Then
+            Produktionsland = MainForm.InfoPanel_Movie1.TB_Produktionsland.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Ordner.Text <> String.Empty Then
+            Ordner = MainForm.InfoPanel_Movie1.TB_Ordner.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Originaltitel.Text <> String.Empty Then
+            Originaltitel = MainForm.InfoPanel_Movie1.TB_Originaltitel.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Pfad.Text <> String.Empty Then
+            Pfad = MainForm.InfoPanel_Movie1.TB_Pfad.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_VideoSeitenverhältnis.Text <> String.Empty Then
+            VideoSeitenverhältnis = MainForm.InfoPanel_Movie1.TB_VideoSeitenverhältnis.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Regisseur.Text <> String.Empty Then
+            Regisseur = MainForm.InfoPanel_Movie1.TB_Regisseur.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Sort.Text <> String.Empty Then
+            Sort = MainForm.InfoPanel_Movie1.TB_Sort.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Spieldauer.Text <> String.Empty Then
+            Spieldauer = MainForm.InfoPanel_Movie1.TB_Spieldauer.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_AudioSprachen.Text <> String.Empty Then
+            AudioSprachen = MainForm.InfoPanel_Movie1.TB_AudioSprachen.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Studios.Text <> String.Empty Then
+            Studios = MainForm.InfoPanel_Movie1.TB_Studios.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_Titel.Text <> String.Empty Then
+            Titel = MainForm.InfoPanel_Movie1.TB_Titel.Text
+        End If
+        If MainForm.InfoPanel_Movie1.TB_VideoCodec.Text <> String.Empty Then
+            VideoCodec = MainForm.InfoPanel_Movie1.TB_VideoCodec.Text
+        End If
+        If MainForm.InfoPanel_Movie1.FSK_Combobox.Text <> String.Empty Then
+            FSK = MainForm.InfoPanel_Movie1.FSK_Combobox.Text
+        End If
+
+        'MainForm.InfoPanel_Movie1.lbl_selectedmovie.Text = Titel
+        Dim dar As String = ""
+        If MainForm.InfoPanel_Movie1.DarstellerView.RowCount - 1 > 0 Then
+            For x As Integer = 0 To MainForm.InfoPanel_Movie1.DarstellerView.RowCount - 1
+                If Not MainForm.InfoPanel_Movie1.DarstellerView.Rows(x).Cells(0).Value Is Nothing Then
+                    If dar = "" Then
+                        dar = CStr(MainForm.InfoPanel_Movie1.DarstellerView.Rows(x).Cells(0).Value)
+                    Else
+                        dar &= ", " & MainForm.InfoPanel_Movie1.DarstellerView.Rows(x).Cells(0).Value.ToString
+                    End If
+                    If Not IsNothing(MainForm.InfoPanel_Movie1.DarstellerView.Rows(x).Cells(1).Value) Then
+                        If Not CStr(MainForm.InfoPanel_Movie1.DarstellerView.Rows(x).Cells(1).Value) = "" Then
+                            dar &= " [" & MainForm.InfoPanel_Movie1.DarstellerView.Rows(x).Cells(1).Value.ToString & "]"
+                        End If
+                    End If
+                End If
+            Next
+        End If
+        Darsteller = dar
+        MyFunctions.Check_Artikel(Me)
+        Genre = Einstellungen.GenreFilter.ChangeGenre(Genre)
+    End Sub
 
     Private Sub refreshDatagrid()
         If Not IsNothing(Row) Then
