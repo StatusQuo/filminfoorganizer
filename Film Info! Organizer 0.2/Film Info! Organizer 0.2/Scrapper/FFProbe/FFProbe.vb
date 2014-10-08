@@ -36,7 +36,7 @@ ByVal cchBuffer As Int32 _
         Dim exe As String = Application.StartupPath & "\Plugins\ffprobe\ffprobe.exe"
         If IO.File.Exists(exe) Then
             Dim sheet As New Process
-            sheet.StartInfo.FileName = shortpath(exe)
+            sheet.StartInfo.FileName = """" & exe & """"
 
 
             Dim input As String = MediaInfoFunctions.CheckFile(m)
@@ -50,14 +50,12 @@ ByVal cchBuffer As Int32 _
 
             sheet.StartInfo.CreateNoWindow = True
 
-
             sheet.Start()
 
 
 
 
-
-            sheet.WaitForExit()
+            '  sheet.WaitForExit()
 
             Dim Infooutput As String = sheet.StandardOutput.ReadToEnd
             ''Dim Audiooutput As String = Audio.StandardOutput.ReadToEnd
@@ -69,7 +67,7 @@ ByVal cchBuffer As Int32 _
             Dim xml As New Xml.XmlDocument
             xml.LoadXml(Infooutput)
 
-            xml.Save("D:\x.xml")
+            'xml.Save("D:\x.xml")
 
 
             'Dim r_VideoAuflösung As String = ""
@@ -128,7 +126,7 @@ ByVal cchBuffer As Int32 _
             End If
 
             r_VideoAuflösung = MediaInfoFunctions.GetVAuflösung(r_height, r_width)
-            r_VideoSeitenverhältnis = MediaInfoFunctions.GetVaspect(r_height, r_width)
+            r_VideoSeitenverhältnis = MediaInfoFunctions.GetVAspect(r_height, r_width)
             If r_VideoBildwiederholungsrate = "" Then
                 r_VideoBildwiederholungsrate = Einstellungen.Config_Abrufen.Abrufen_MediaInfo_StandardFramerate
             End If
