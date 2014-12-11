@@ -9,7 +9,7 @@ Public Class Form1
 
             ' XmlTextWriter-Objekt für unsere Ausgabedatei erzeugen: 
             Dim XMLobj As Xml.XmlTextWriter _
-              = New Xml.XmlTextWriter("D:\Eigene Dokumente\Dropbox\Public\Update\update.xml", enc)
+              = New Xml.XmlTextWriter(TextBoxDest.Text & "\update.xml", enc)
 
             With XMLobj
                 .Formatting = Xml.Formatting.Indented
@@ -57,23 +57,23 @@ Public Class Form1
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Dim path As String
-        path = "D:\Eigene Dokumente\Visual Studio 2010\Projects\Film Info! Updater\Film Info! Updater\Resources\Ver.txt"
+        path = TextBoxSource.Text & "\Resources\Ver.txt"
         Dim t As String = TextBox1.Text & "." & TextBox2.Text & "." & TextBox3.Text & "." & TextBox4.Text
         My.Computer.FileSystem.WriteAllText(path, t, False)
-        Zipper.Zip()
+        Zipper.Zip(TextBoxSource.Text)
 
 
         Dim sheet As New Process
         sheet.StartInfo.FileName = "C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe"
-        sheet.StartInfo.Arguments = "/property:Configuration=Debug " & """D:\Eigene Dokumente\Visual Studio 2010\Projects\Film Info! Updater\Film Info! Updater\Film Info! Updater.vbproj"""
+        sheet.StartInfo.Arguments = "/property:Configuration=Debug " & """" & TextBoxSource.Text & "\Film Info! Updater.vbproj"""
         sheet.StartInfo.UseShellExecute = False
         sheet.StartInfo.RedirectStandardOutput = True
-        sheet.StartInfo.CreateNoWindow = True
+        'sheet.StartInfo.CreateNoWindow = True
         sheet.Start()
         sheet.WaitForExit()
         sheet.Dispose()
-        Dim s As String = "D:\Eigene Dokumente\Visual Studio 2010\Projects\Film Info! Updater\Film Info! Updater\bin\Debug\Film Info! Updater.exe"
-        Dim d As String = "D:\Eigene Dokumente\Dropbox\Public\Update\Film Info! Updater " & TextBox1.Text & "." & TextBox2.Text & "." & TextBox3.Text & "." & TextBox4.Text & ".exe"
+        Dim s As String = TextBoxSource.Text & "\bin\Debug\Film Info! Updater.exe"
+        Dim d As String = TextBoxDest.Text & "\Film Info! Updater " & TextBox1.Text & "." & TextBox2.Text & "." & TextBox3.Text & "." & TextBox4.Text & ".exe"
 
         'Process.Start("D:\Eigene Dokumente\Visual Studio 2010\Projects\Film Info! Updater\Film Info! Updater\bin\Debug")
         If IO.File.Exists(s) Then
@@ -95,7 +95,7 @@ Public Class Form1
     End Function
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'AdminRights.hasRight()
-        If IO.File.Exists("D:\Eigene Dokumente\Dropbox\Public\Update\update.xml") Then
+        If IO.File.Exists(TextBoxDest.Text & "\update.xml") Then
 
 
             Dim maj As Double
@@ -104,7 +104,7 @@ Public Class Form1
             Dim rev As Double
 
             Dim xml As New Xml.XmlDocument
-            xml.Load("D:\Eigene Dokumente\Dropbox\Public\Update\update.xml")
+            xml.Load(TextBoxDest.Text & "\update.xml")
             'xml = MyFunctions.HttploadXML("http://dl.dropbox.com/u/6880006/Update/update.xml")
             'xml = MyFunctions.HttploadXML("http://fio.square7.ch/legend/update/update.xml")
             Dim nxml As Xml.XmlNode
@@ -142,9 +142,11 @@ Public Class Form1
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Try
-            Process.Start("D:\Eigene Dokumente\Dropbox\Public\Update")
+            Process.Start(TextBoxDest.Text)
         Catch ex As Exception
 
         End Try
     End Sub
+
+
 End Class

@@ -2,10 +2,13 @@
 Imports System.IO
 Imports ICSharpCode.SharpZipLib.Core
 Public Class Zipper
-    Public Shared Sub Zip()
-        Dim sourceDir As String = "D:\Eigene Dokumente\Visual Studio 2010\Projects\Film Info! Organizer 0.2\Film Info! Organizer 0.2\bin\Debug\"
+    Public Shared Sub Zip(ByVal dest As String)
+
+
+
+        Dim sourceDir As String = "D:\Eigene Dokumente\GitHub\filminfoorganizer\Film Info! Organizer 0.2\Film Info! Organizer 0.2\bin\Debug\"
         Dim path As String
-        path = "D:\Eigene Dokumente\Visual Studio 2010\Projects\Film Info! Updater\Film Info! Updater\Resources\Film Info! Organizer.zip"
+        path = dest & "\Resources\Film Info! Organizer.zip"
 
         'If sourceDir.Length = 0 Then
         '    MsgBox("Bitte einen Ordner auswählen", MsgBoxStyle.Critical)
@@ -21,11 +24,11 @@ Public Class Zipper
 
         'Dim astrFileNames() As String = Directory.GetFiles(sourceDir)
         Dim astrFileNames(5) As String
-        astrFileNames(0) = "D:\Eigene Dokumente\Visual Studio 2010\Projects\Film Info! Organizer 0.2\Film Info! Organizer 0.2\bin\Debug\Film Info! Organizer.exe"
-        astrFileNames(1) = "D:\Eigene Dokumente\Visual Studio 2010\Projects\Film Info! Organizer 0.2\Film Info! Organizer 0.2\bin\Debug\Microsoft.WindowsAPICodePack.dll"
-        astrFileNames(2) = "D:\Eigene Dokumente\Visual Studio 2010\Projects\Film Info! Organizer 0.2\Film Info! Organizer 0.2\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll"
-        astrFileNames(3) = "D:\Eigene Dokumente\Visual Studio 2010\Projects\Film Info! Organizer 0.2\Film Info! Organizer 0.2\bin\Debug\ExpandableGridView.dll"
-        astrFileNames(4) = "D:\Eigene Dokumente\Visual Studio 2010\Projects\Film Info! Organizer 0.2\Film Info! Organizer 0.2\bin\Debug\Newtonsoft.Json.dll"
+        astrFileNames(0) = sourceDir & "Film Info! Organizer.exe"
+        astrFileNames(1) = sourceDir & "Microsoft.WindowsAPICodePack.dll"
+        astrFileNames(2) = sourceDir & "Microsoft.WindowsAPICodePack.Shell.dll"
+        astrFileNames(3) = sourceDir & "ExpandableGridView.dll"
+        astrFileNames(4) = sourceDir & "Newtonsoft.Json.dll"
 
         Dim strmZipOutputStream As ZipOutputStream
 

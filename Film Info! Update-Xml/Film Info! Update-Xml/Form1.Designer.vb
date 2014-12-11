@@ -33,11 +33,13 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.TextBoxSource = New System.Windows.Forms.TextBox()
+        Me.TextBoxDest = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(22, 56)
+        Me.TextBox1.Location = New System.Drawing.Point(9, 123)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 0
@@ -45,28 +47,28 @@ Partial Class Form1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(128, 56)
+        Me.TextBox2.Location = New System.Drawing.Point(115, 123)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 1
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(234, 56)
+        Me.TextBox3.Location = New System.Drawing.Point(221, 123)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 2
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(340, 56)
+        Me.TextBox4.Location = New System.Drawing.Point(327, 123)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 20)
         Me.TextBox4.TabIndex = 3
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(22, 101)
+        Me.TextBox5.Location = New System.Drawing.Point(9, 168)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(418, 20)
         Me.TextBox5.TabIndex = 4
@@ -74,7 +76,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(22, 82)
+        Me.Label1.Location = New System.Drawing.Point(9, 149)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(37, 13)
         Me.Label1.TabIndex = 5
@@ -83,7 +85,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(22, 40)
+        Me.Label2.Location = New System.Drawing.Point(9, 107)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(42, 13)
         Me.Label2.TabIndex = 6
@@ -91,15 +93,15 @@ Partial Class Form1
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(22, 128)
+        Me.TextBox6.Location = New System.Drawing.Point(12, 201)
         Me.TextBox6.Multiline = True
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(418, 268)
+        Me.TextBox6.Size = New System.Drawing.Size(439, 268)
         Me.TextBox6.TabIndex = 7
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(365, 402)
+        Me.Button1.Location = New System.Drawing.Point(376, 475)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 8
@@ -108,7 +110,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(284, 402)
+        Me.Button2.Location = New System.Drawing.Point(295, 475)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 9
@@ -117,18 +119,37 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(22, 402)
+        Me.Button3.Location = New System.Drawing.Point(12, 475)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 10
         Me.Button3.Text = "Öffnen"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'TextBoxSource
+        '
+        Me.TextBoxSource.Location = New System.Drawing.Point(9, 12)
+        Me.TextBoxSource.Name = "TextBoxSource"
+        Me.TextBoxSource.Size = New System.Drawing.Size(699, 20)
+        Me.TextBoxSource.TabIndex = 11
+        Me.TextBoxSource.Text = "D:\Eigene Dokumente\GitHub\filminfoorganizer\Film Info! Updater\Film Info! Update" & _
+    "r"
+        '
+        'TextBoxDest
+        '
+        Me.TextBoxDest.Location = New System.Drawing.Point(9, 50)
+        Me.TextBoxDest.Name = "TextBoxDest"
+        Me.TextBoxDest.Size = New System.Drawing.Size(699, 20)
+        Me.TextBoxDest.TabIndex = 12
+        Me.TextBoxDest.Text = "D:\Dropbox\Public\Update"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(463, 437)
+        Me.ClientSize = New System.Drawing.Size(720, 510)
+        Me.Controls.Add(Me.TextBoxDest)
+        Me.Controls.Add(Me.TextBoxSource)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -157,5 +178,7 @@ Partial Class Form1
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents TextBoxSource As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxDest As System.Windows.Forms.TextBox
 
 End Class
